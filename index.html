@@ -1,67 +1,38 @@
 <!DOCTYPE html>
-<html lang="ru" class="dark scroll-smooth" style=""><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Владислав Выголка — QA Инженер | Персональный сайт-визитка</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Inter Font as fallback to SF Pro -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: [
-                            '-apple-system',
-                            'BlinkMacSystemFont',
-                            '"SF Pro Display"',
-                            '"SF Pro Text"',
-                            '"Inter"',
-                            '"Helvetica Neue"',
-                            'Arial',
-                            'sans-serif'
-                        ],
-                        mono: [
-                            '"SF Mono"',
-                            'ui-monospace',
-                            'SFMono-Regular',
-                            'Menlo',
-                            'Monaco',
-                            'Consolas',
-                            'monospace'
-                        ]
-                    },
-                    colors: {
-                        apple: {
-                            blue: '#0071e3',
-                            blueHover: '#0077ed',
-                            darkBg: '#000000',
-                            darkCard: '#141416',
-                            darkCardElevated: '#1d1d1f',
-                            lightBg: '#f5f5f7',
-                            lightCard: '#ffffff',
-                            grayText: '#86868b',
-                            lightGrayText: '#6e6e73',
-                            green: '#30d158',
-                            orange: '#ff9f0a',
-                            purple: '#bf5af2'
-                        }
-                    },
-                    borderRadius: {
-                        'bento': '28px',
-                        'pill': '980px'
-                    }
-                }
-            }
+<html lang="ru" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Владислав Выголка — QA Engineer | Mobile QA, REST API, FinTech</title>
+  <meta name="description" content="Владислав Выголка — QA Engineer с опытом более 4 лет в финтехе и банковском ПО. Mobile QA (iOS/Android), REST API, Postman, Proxyman, MongoDB, продуктовая аналитика, Python и pytest.">
+  <meta name="keywords" content="QA Engineer, QA Engineer Москва, Mobile QA, iOS testing, Android testing, REST API testing, FinTech QA, Postman, Proxyman, Python, pytest, Allure TestOps, MongoDB, Sravni.ru, R-Style SoftLab">
+  <meta name="google-site-verification" content="Rl-VN9BE2oyH9U6C0c6-54ULsjTfY2LmJ0YyTxAa8io">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Владислав Выголка — QA Engineer | Mobile QA &amp; FinTech">
+  <meta property="og:description" content="QA Engineer • 4+ года в FinTech и банковском ПО • Mobile iOS/Android • REST API • Python / pytest в собственном проекте">
+  <meta property="og:url" content="https://vlad-qa-portfolio.vercel.app/">
+  <link rel="canonical" href="https://vlad-qa-portfolio.vercel.app/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['-apple-system','BlinkMacSystemFont','"SF Pro Display"','"SF Pro Text"','"Inter"','"Helvetica Neue"','Arial','sans-serif'] },
+          colors: { apple: { blue:'#0071e3', blueHover:'#0077ed', grayText:'#86868b', lightGrayText:'#6e6e73', green:'#30d158', purple:'#bf5af2' } },
+          borderRadius: { bento:'28px', pill:'980px' }
         }
-    </script>
+      }
+    }
+  </script>
+  <style>
 
-    <style>
         :root {
             --bg-primary: #000000;
             --bg-secondary: #0a0a0c;
@@ -116,7 +87,6 @@
         body.modal-open-lock {
             overflow: hidden !important;
             overscroll-behavior: none !important;
-            touch-action: none;
         }
 
         .apple-glass-nav {
@@ -175,22 +145,7 @@
             pointer-events: none;
             z-index: 0;
         }
-
-        body.edit-mode-active [data-editable="true"] {
-            outline: 1.5px dashed rgba(0, 113, 227, 0.65);
-            outline-offset: 4px;
-            border-radius: 8px;
-            cursor: text;
-            transition: outline-color 0.2s ease, background-color 0.2s ease;
-        }
-
-        body.edit-mode-active [data-editable="true"]:hover,
-        body.edit-mode-active [data-editable="true"]:focus {
-            outline: 2px solid #0071e3;
-            background-color: rgba(0, 113, 227, 0.08);
-        }
-
-        .btn-apple-primary {
+.btn-apple-primary {
             background-color: #0071e3;
             color: #ffffff;
             border-radius: 980px;
@@ -269,732 +224,232 @@
         ::-webkit-scrollbar-thumb:hover {
             background: rgba(134, 134, 139, 0.5);
         }
-    </style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:-apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:"SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.-right-24{right:-6rem}.-top-24{top:-6rem}.left-1\/2{left:50%}.top-0{top:0px}.top-14{top:3.5rem}.top-16{top:4rem}.z-0{z-index:0}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.z-\[60\]{z-index:60}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-1\.5{margin-bottom:0.375rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-2\.5{margin-bottom:0.625rem}.mb-20{margin-bottom:5rem}.mb-24{margin-bottom:6rem}.mb-3{margin-bottom:0.75rem}.mb-3\.5{margin-bottom:0.875rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-7{margin-bottom:1.75rem}.mb-8{margin-bottom:2rem}.ml-2{margin-left:0.5rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-14{margin-top:3.5rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-7{margin-top:1.75rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-2{height:0.5rem}.h-2\.5{height:0.625rem}.h-3\.5{height:0.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-64{height:16rem}.h-8{height:2rem}.h-full{height:100%}.max-h-\[90vh\]{max-height:90vh}.min-h-\[42px\]{min-height:42px}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-2{width:0.5rem}.w-2\.5{width:0.625rem}.w-3\.5{width:0.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-64{width:16rem}.w-8{width:2rem}.w-\[42\%\]{width:42%}.w-\[62\%\]{width:62%}.w-full{width:100%}.min-w-0{min-width:0px}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.max-w-\[92vw\]{max-width:92vw}.max-w-full{max-width:100%}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-4{--tw-translate-y:-1rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-0{--tw-translate-y:0px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes ping{75%, 100%{transform:scale(2);opacity:0}}.animate-ping{animation:ping 1s cubic-bezier(0, 0, 0.2, 1) infinite}.cursor-pointer{cursor:pointer}.resize-none{resize:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-3\.5{gap:0.875rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-7{gap:1.75rem}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-3\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.875rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.overflow-x-hidden{overflow-x:hidden}.overscroll-contain{overscroll-behavior:contain}.overscroll-none{overscroll-behavior:none}.scroll-smooth{scroll-behavior:smooth}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-bento{border-radius:28px}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-pill{border-radius:980px}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-apple-blue\/20{border-color:rgb(0 113 227 / 0.2)}.border-apple-blue\/30{border-color:rgb(0 113 227 / 0.3)}.border-apple-blue\/40{border-color:rgb(0 113 227 / 0.4)}.border-apple-green\/30{border-color:rgb(48 209 88 / 0.3)}.border-apple-green\/35{border-color:rgb(48 209 88 / 0.35)}.border-black\/10{border-color:rgb(0 0 0 / 0.1)}.border-black\/5{border-color:rgb(0 0 0 / 0.05)}.border-purple-500\/30{border-color:rgb(168 85 247 / 0.3)}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/15{border-color:rgb(255 255 255 / 0.15)}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.bg-\[\#161618\]{--tw-bg-opacity:1;background-color:rgb(22 22 24 / var(--tw-bg-opacity, 1))}.bg-\[\#1d1d1f\]{--tw-bg-opacity:1;background-color:rgb(29 29 31 / var(--tw-bg-opacity, 1))}.bg-\[\#27c93f\]{--tw-bg-opacity:1;background-color:rgb(39 201 63 / var(--tw-bg-opacity, 1))}.bg-\[\#fc3f1d\]{--tw-bg-opacity:1;background-color:rgb(252 63 29 / var(--tw-bg-opacity, 1))}.bg-\[\#fc3f1d\]\/15{background-color:rgb(252 63 29 / 0.15)}.bg-\[\#ff5f56\]{--tw-bg-opacity:1;background-color:rgb(255 95 86 / var(--tw-bg-opacity, 1))}.bg-\[\#ffbd2e\]{--tw-bg-opacity:1;background-color:rgb(255 189 46 / var(--tw-bg-opacity, 1))}.bg-amber-500\/15{background-color:rgb(245 158 11 / 0.15)}.bg-apple-blue{--tw-bg-opacity:1;background-color:rgb(0 113 227 / var(--tw-bg-opacity, 1))}.bg-apple-blue\/10{background-color:rgb(0 113 227 / 0.1)}.bg-apple-blue\/15{background-color:rgb(0 113 227 / 0.15)}.bg-apple-blue\/20{background-color:rgb(0 113 227 / 0.2)}.bg-apple-blue\/25{background-color:rgb(0 113 227 / 0.25)}.bg-apple-green{--tw-bg-opacity:1;background-color:rgb(48 209 88 / var(--tw-bg-opacity, 1))}.bg-apple-green\/10{background-color:rgb(48 209 88 / 0.1)}.bg-apple-green\/15{background-color:rgb(48 209 88 / 0.15)}.bg-apple-green\/20{background-color:rgb(48 209 88 / 0.2)}.bg-black\/10{background-color:rgb(0 0 0 / 0.1)}.bg-black\/5{background-color:rgb(0 0 0 / 0.05)}.bg-black\/75{background-color:rgb(0 0 0 / 0.75)}.bg-black\/\[0\.03\]{background-color:rgb(0 0 0 / 0.03)}.bg-purple-500{--tw-bg-opacity:1;background-color:rgb(168 85 247 / var(--tw-bg-opacity, 1))}.bg-purple-500\/10{background-color:rgb(168 85 247 / 0.1)}.bg-purple-500\/15{background-color:rgb(168 85 247 / 0.15)}.bg-red-500\/10{background-color:rgb(239 68 68 / 0.1)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-white\/70{background-color:rgb(255 255 255 / 0.7)}.bg-white\/80{background-color:rgb(255 255 255 / 0.8)}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-apple-blue\/10{--tw-gradient-from:rgb(0 113 227 / 0.1) var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 113 227 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-neutral-700{--tw-gradient-from:#404040 var(--tw-gradient-from-position);--tw-gradient-to:rgb(64 64 64 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-white\/20{--tw-gradient-from:rgb(255 255 255 / 0.2) var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-neutral-900{--tw-gradient-to:#171717 var(--tw-gradient-to-position)}.to-purple-500\/10{--tw-gradient-to:rgb(168 85 247 / 0.1) var(--tw-gradient-to-position)}.to-white\/5{--tw-gradient-to:rgb(255 255 255 / 0.05) var(--tw-gradient-to-position)}.p-1{padding:0.25rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-24{padding-bottom:6rem}.pb-4{padding-bottom:1rem}.pb-6{padding-bottom:1.5rem}.pt-12{padding-top:3rem}.pt-2{padding-top:0.5rem}.pt-4{padding-top:1rem}.pt-5{padding-top:1.25rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:"SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[9px\]{font-size:9px}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-\[1\.06\]{line-height:1.06}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.tracking-\[0\.14em\]{letter-spacing:0.14em}.tracking-\[0\.16em\]{letter-spacing:0.16em}.tracking-tight{letter-spacing:-0.025em}.tracking-tighter{letter-spacing:-0.05em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.text-\[\#fc3f1d\]{--tw-text-opacity:1;color:rgb(252 63 29 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-apple-blue{--tw-text-opacity:1;color:rgb(0 113 227 / var(--tw-text-opacity, 1))}.text-apple-grayText{--tw-text-opacity:1;color:rgb(134 134 139 / var(--tw-text-opacity, 1))}.text-apple-green{--tw-text-opacity:1;color:rgb(48 209 88 / var(--tw-text-opacity, 1))}.text-apple-lightGrayText{--tw-text-opacity:1;color:rgb(110 110 115 / var(--tw-text-opacity, 1))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.text-neutral-100{--tw-text-opacity:1;color:rgb(245 245 245 / var(--tw-text-opacity, 1))}.text-neutral-200{--tw-text-opacity:1;color:rgb(229 229 229 / var(--tw-text-opacity, 1))}.text-neutral-300{--tw-text-opacity:1;color:rgb(212 212 212 / var(--tw-text-opacity, 1))}.text-neutral-400{--tw-text-opacity:1;color:rgb(163 163 163 / var(--tw-text-opacity, 1))}.text-neutral-500{--tw-text-opacity:1;color:rgb(115 115 115 / var(--tw-text-opacity, 1))}.text-neutral-700{--tw-text-opacity:1;color:rgb(64 64 64 / var(--tw-text-opacity, 1))}.text-purple-400{--tw-text-opacity:1;color:rgb(192 132 252 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.opacity-0{opacity:0}.opacity-100{opacity:1}.opacity-80{opacity:0.8}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.selection\:bg-apple-blue *::selection{--tw-bg-opacity:1;background-color:rgb(0 113 227 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-apple-blue::selection{--tw-bg-opacity:1;background-color:rgb(0 113 227 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:bg-\[\#e53515\]:hover{--tw-bg-opacity:1;background-color:rgb(229 53 21 / var(--tw-bg-opacity, 1))}.hover\:bg-\[\#fc3f1d\]:hover{--tw-bg-opacity:1;background-color:rgb(252 63 29 / var(--tw-bg-opacity, 1))}.hover\:bg-apple-blue:hover{--tw-bg-opacity:1;background-color:rgb(0 113 227 / var(--tw-bg-opacity, 1))}.hover\:bg-apple-blueHover:hover{--tw-bg-opacity:1;background-color:rgb(0 119 237 / var(--tw-bg-opacity, 1))}.hover\:bg-apple-green\/30:hover{background-color:rgb(48 209 88 / 0.3)}.hover\:bg-black\/10:hover{background-color:rgb(0 0 0 / 0.1)}.hover\:bg-black\/5:hover{background-color:rgb(0 0 0 / 0.05)}.hover\:bg-red-500\/20:hover{background-color:rgb(239 68 68 / 0.2)}.hover\:bg-white\/10:hover{background-color:rgb(255 255 255 / 0.1)}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:text-apple-blue:hover{--tw-text-opacity:1;color:rgb(0 113 227 / var(--tw-text-opacity, 1))}.hover\:text-black:hover{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:opacity-80:hover{opacity:0.8}.focus\:border-apple-blue:focus{--tw-border-opacity:1;border-color:rgb(0 113 227 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.dark\:block:is(.dark *){display:block}.dark\:hidden:is(.dark *){display:none}.dark\:border-white\/10:is(.dark *){border-color:rgb(255 255 255 / 0.1)}.dark\:border-white\/15:is(.dark *){border-color:rgb(255 255 255 / 0.15)}.dark\:border-white\/5:is(.dark *){border-color:rgb(255 255 255 / 0.05)}.dark\:bg-\[\#1d1d1f\]:is(.dark *){--tw-bg-opacity:1;background-color:rgb(29 29 31 / var(--tw-bg-opacity, 1))}.dark\:bg-black\/45:is(.dark *){background-color:rgb(0 0 0 / 0.45)}.dark\:bg-white\/10:is(.dark *){background-color:rgb(255 255 255 / 0.1)}.dark\:bg-white\/5:is(.dark *){background-color:rgb(255 255 255 / 0.05)}.dark\:bg-white\/\[0\.03\]:is(.dark *){background-color:rgb(255 255 255 / 0.03)}.dark\:from-white\/90:is(.dark *){--tw-gradient-from:rgb(255 255 255 / 0.9) var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.dark\:to-neutral-300:is(.dark *){--tw-gradient-to:#d4d4d4 var(--tw-gradient-to-position)}.dark\:text-apple-grayText:is(.dark *){--tw-text-opacity:1;color:rgb(134 134 139 / var(--tw-text-opacity, 1))}.dark\:text-black:is(.dark *){--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.dark\:text-neutral-200:is(.dark *){--tw-text-opacity:1;color:rgb(229 229 229 / var(--tw-text-opacity, 1))}.dark\:text-neutral-300:is(.dark *){--tw-text-opacity:1;color:rgb(212 212 212 / var(--tw-text-opacity, 1))}.dark\:text-neutral-400:is(.dark *){--tw-text-opacity:1;color:rgb(163 163 163 / var(--tw-text-opacity, 1))}.dark\:text-white:is(.dark *){--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.dark\:hover\:bg-white\/10:hover:is(.dark *){background-color:rgb(255 255 255 / 0.1)}.dark\:hover\:bg-white\/20:hover:is(.dark *){background-color:rgb(255 255 255 / 0.2)}.dark\:hover\:text-white:hover:is(.dark *){--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:col-span-2{grid-column:span 2 / span 2}.sm\:mb-24{margin-bottom:6rem}.sm\:block{display:block}.sm\:inline{display:inline}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-end{align-items:flex-end}.sm\:items-center{align-items:center}.sm\:gap-2{gap:0.5rem}.sm\:gap-4{gap:1rem}.sm\:p-10{padding:2.5rem}.sm\:p-5{padding:1.25rem}.sm\:p-6{padding:1.5rem}.sm\:p-7{padding:1.75rem}.sm\:p-8{padding:2rem}.sm\:p-9{padding:2.25rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-20{padding-top:5rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-6xl{font-size:3.75rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:col-span-5{grid-column:span 5 / span 5}.md\:col-span-7{grid-column:span 7 / span 7}.md\:inline{display:inline}.md\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-7xl{font-size:4.5rem;line-height:1}}@media (min-width: 1024px){.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:flex{display:flex}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-start{align-items:flex-start}.lg\:items-end{align-items:flex-end}}</style></head>
-<body class="min-h-screen selection:bg-apple-blue selection:text-white" style="">
+    
+    .section-kicker { color: var(--accent, #0071e3); }
+    .skill-tag { display:inline-flex; align-items:center; padding:.4rem .8rem; border-radius:999px; font-size:.75rem; font-weight:600; background:rgba(0,113,227,.10); color:#2788ef; }
+    .content-list { padding-left:1.15rem; list-style:disc; }
+    .content-list li { padding-left:.15rem; margin:.45rem 0; }
+    a:focus-visible, button:focus-visible { outline:2px solid #0071e3; outline-offset:3px; }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior:auto !important; animation-duration:.01ms !important; transition-duration:.01ms !important; } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfilePage",
+    "name":"Профессиональное портфолио Владислава Выголки",
+    "url":"https://vlad-qa-portfolio.vercel.app/",
+    "inLanguage":"ru-RU",
+    "mainEntity":{
+      "@type":"Person",
+      "name":"Владислав Выголка",
+      "jobTitle":"QA Engineer",
+      "description":"QA Engineer с опытом более 4 лет в финтехе и банковском программном обеспечении. Специализация: ручное тестирование мобильных приложений iOS и Android, REST API, интеграции, анализ сетевого трафика, локализация дефектов и проверка продуктовой аналитики. Развивает навыки автоматизации на Python и pytest.",
+      "url":"https://vlad-qa-portfolio.vercel.app/",
+      "email":"mailto:v.vygolka@yandex.ru",
+      "telephone":"+7-930-731-30-40",
+      "address":{"@type":"PostalAddress","addressLocality":"Москва","addressCountry":"RU"},
+      "worksFor":{"@type":"Organization","name":"Сравни.ру","url":"https://www.sravni.ru/"},
+      "alumniOf":{"@type":"CollegeOrUniversity","name":"Брянский государственный университет имени академика И.Г. Петровского"},
+      "sameAs":["https://github.com/vvygolka"],
+      "knowsAbout":["Software Quality Assurance","Mobile Testing","iOS Testing","Android Testing","Manual Testing","Functional Testing","Regression Testing","Integration Testing","REST API Testing","Postman","Proxyman","HTTP/HTTPS Traffic Analysis","MongoDB","Studio 3T","AppMetrica","Firebase Analytics","Python","pytest","Test Design","Test Cases","Bug Reporting","FinTech","Banking Software"]
+    }
+  }
+  </script>
+</head>
+<body class="min-h-screen antialiased">
+  <header class="sticky top-0 z-40 apple-glass-nav">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3 min-w-0">
+        <span class="w-9 h-9 rounded-xl bg-gradient-to-b from-neutral-700 to-neutral-900 dark:from-white/90 dark:to-neutral-300 flex items-center justify-center text-white dark:text-black font-bold text-xs shrink-0">ВВ</span>
+        <span class="min-w-0">
+          <span class="block text-sm font-semibold tracking-tight truncate">Владислав Выголка</span>
+          <span class="block text-[10px] text-apple-grayText font-medium tracking-wide uppercase mt-0.5">QA Engineer • Mobile &amp; API</span>
+        </span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-5 text-xs font-medium text-apple-grayText" aria-label="Основная навигация">
+        <a href="#profile" class="hover:text-apple-blue">Профиль</a>
+        <a href="#skills" class="hover:text-apple-blue">Навыки</a>
+        <a href="#experience" class="hover:text-apple-blue">Опыт</a>
+        <a href="#projects" class="hover:text-apple-blue">Проект</a>
+        <a href="#education" class="hover:text-apple-blue">Образование</a>
+        <a href="#contacts" class="hover:text-apple-blue">Контакты</a>
+      </nav>
+      <button type="button" id="language-toggle" class="px-3 h-9 rounded-full border border-black/10 dark:border-white/15 text-xs font-semibold hover:bg-black/5 dark:hover:bg-white/10" aria-label="Switch language">EN</button>
+      <button type="button" id="theme-toggle" aria-label="Переключить тему" class="w-9 h-9 rounded-full border border-black/10 dark:border-white/15 flex items-center justify-center hover:bg-black/5 dark:hover:bg-white/10">
+        <span id="theme-icon" aria-hidden="true">☼</span>
+      </button>
+    </div>
+  </header>
 
-    <!-- Dynamic Island Toast Notification -->
-    <div id="dynamic-toast" class="fixed top-16 left-1/2 -translate-x-1/2 z-[60] pointer-events-none max-w-[92vw] opacity-0 -translate-y-4">
-        <div class="flex items-center gap-3 px-5 py-2.5 rounded-pill bg-[#1d1d1f] text-white border border-white/15 shadow-2xl">
-            <span class="w-5 h-5 rounded-full bg-apple-green/20 text-apple-green flex items-center justify-center shrink-0">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-                </svg>
-            </span>
-            <span id="toast-message" class="text-xs sm:text-sm font-medium tracking-tight truncate">Открываем Яндекс Почту (текст скопирован)</span>
+  <main id="top" class="relative z-10 max-w-6xl w-full mx-auto px-4 sm:px-6 pt-14 sm:pt-20 pb-20">
+    <section id="profile" class="text-center max-w-4xl mx-auto mb-24">
+      <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-pill border border-black/10 dark:border-white/15 bg-white/70 dark:bg-white/5 backdrop-blur-md mb-7 shadow-sm">
+        <span class="w-2.5 h-2.5 rounded-full bg-apple-green"></span>
+        <span class="text-xs font-medium text-neutral-700 dark:text-neutral-200">Открыт к предложениям • Москва • Удалённо / гибрид</span>
+      </div>
+      <p class="text-xs sm:text-sm font-semibold uppercase tracking-[0.16em] text-apple-blue mb-3">QA Engineer • Mobile (iOS / Android) • REST API • FinTech</p>
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.06] titanium-text mb-6">Владислав Выголка</h1>
+      <p class="text-base sm:text-xl md:text-2xl text-apple-lightGrayText dark:text-apple-grayText max-w-3xl mx-auto leading-relaxed mb-9">
+        QA Engineer с опытом более 4 лет в финтехе и банковском ПО. Тестирую мобильные приложения iOS и Android, REST API и интеграции. Нахожу причины дефектов на стыке клиента и backend, проверяю продуктовую аналитику и развиваю автоматизацию на Python.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <a href="mailto:v.vygolka@yandex.ru?subject=Предложение%20о%20работе%20—%20QA%20Engineer" class="btn-apple-primary px-6 py-3.5 text-sm sm:text-base inline-flex items-center gap-2">Предложить работу: v.vygolka@yandex.ru ↗</a>
+        
+      </div>
+      <div class="mt-14 pt-8 border-t border-black/5 dark:border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+        <div><div class="text-2xl sm:text-3xl font-bold">4+ года</div><div class="text-xs text-apple-grayText mt-1">QA в финтехе и банковском ПО</div></div>
+        <div><div class="text-2xl sm:text-3xl font-bold">iOS / Android</div><div class="text-xs text-apple-grayText mt-1">Функциональное и регрессионное Mobile QA</div></div>
+        <div><div class="text-2xl sm:text-3xl font-bold">REST API</div><div class="text-xs text-apple-grayText mt-1">Postman • Proxyman • MongoDB</div></div>
+        <div><div class="text-2xl sm:text-3xl font-bold">Python / pytest</div><div class="text-xs text-apple-grayText mt-1">Практика в собственном проекте</div></div>
+      </div>
+    </section>
+
+    <section id="skills" class="mb-24" aria-labelledby="skills-title">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+        <div><p class="text-xs font-semibold uppercase tracking-[0.14em] text-apple-blue mb-2">Технологический профиль</p><h2 id="skills-title" class="text-3xl sm:text-5xl font-bold tracking-tight titanium-text">Компетенции и инструменты</h2></div>
+        <p class="text-sm sm:text-base text-apple-grayText max-w-md">Практический стек для тестирования мобильных продуктов, API, интеграций и данных — от воспроизведения дефекта до локализации его источника.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <article class="bento-card p-6 sm:p-8">
+          <p class="text-xs font-semibold uppercase tracking-wider text-apple-blue mb-3">Mobile QA</p>
+          <h3 class="text-xl sm:text-2xl font-bold mb-3">iOS и Android</h3>
+          <p class="text-sm text-apple-grayText leading-relaxed mb-5">Функциональное, регрессионное, интеграционное и исследовательское тестирование мобильных приложений. Проверка пользовательских сценариев, UI, поведения сборок и взаимодействия с backend.</p>
+          <div class="flex flex-wrap gap-2"><span class="skill-tag">iOS</span><span class="skill-tag">Android</span><span class="skill-tag">Xcode</span><span class="skill-tag">Android Studio</span><span class="skill-tag">Mobile testing</span></div>
+        </article>
+        <article class="bento-card p-6 sm:p-8">
+          <p class="text-xs font-semibold uppercase tracking-wider text-apple-blue mb-3">API &amp; Backend</p>
+          <h3 class="text-xl sm:text-2xl font-bold mb-3">REST API и интеграции</h3>
+          <p class="text-sm text-apple-grayText leading-relaxed mb-5">Проверка запросов и ответов, параметров, заголовков, статусов и обработки ошибок. Анализ HTTP/HTTPS-трафика, логов и состояния данных для локализации дефектов.</p>
+          <div class="flex flex-wrap gap-2"><span class="skill-tag">Postman</span><span class="skill-tag">Proxyman</span><span class="skill-tag">REST API</span><span class="skill-tag">WireMock</span><span class="skill-tag">MongoDB</span><span class="skill-tag">Studio 3T</span></div>
+        </article>
+        <article class="bento-card p-6 sm:p-8">
+          <p class="text-xs font-semibold uppercase tracking-wider text-apple-blue mb-3">QA process</p>
+          <h3 class="text-xl sm:text-2xl font-bold mb-3">Тест-дизайн и качество продукта</h3>
+          <p class="text-sm text-apple-grayText leading-relaxed mb-5">Анализ требований, подготовка тест-кейсов и чек-листов, сопровождение дефектов, регрессионное покрытие и проверка продуктовой аналитики. Взаимодействие с разработчиками и аналитиками.</p>
+          <div class="flex flex-wrap gap-2"><span class="skill-tag">Jira</span><span class="skill-tag">Allure TestOps</span><span class="skill-tag">TestOps</span><span class="skill-tag">AppMetrica</span><span class="skill-tag">Firebase</span></div>
+        </article>
+        <article class="bento-card p-6 sm:p-8">
+          <p class="text-xs font-semibold uppercase tracking-wider text-apple-purple mb-3">Automation &amp; Development</p>
+          <h3 class="text-xl sm:text-2xl font-bold mb-3">Развитие в сторону Automation QA / SDET</h3>
+          <p class="text-sm text-apple-grayText leading-relaxed mb-5">Python и pytest применяю в собственном проекте для тестирования бизнес-логики и API. JavaScript / TypeScript и Maestro изучаю как следующие инструменты автоматизации.</p>
+          <div class="flex flex-wrap gap-2"><span class="skill-tag">Python</span><span class="skill-tag">pytest</span><span class="skill-tag">Git</span><span class="skill-tag">JavaScript — изучаю</span><span class="skill-tag">TypeScript — изучаю</span><span class="skill-tag">Maestro — изучаю</span></div>
+        </article>
+      </div>
+      <div class="bento-card mt-5 p-6 sm:p-8 bg-gradient-to-br from-apple-blue/10 via-transparent to-purple-500/10">
+        <h3 class="text-xl font-bold mb-2">Мой подход к тестированию</h3>
+        <p class="text-sm sm:text-base text-apple-grayText leading-relaxed">Не ограничиваюсь проверкой интерфейса. Прохожу пользовательский сценарий целиком: анализирую требования, проверяю мобильный клиент, сетевой запрос, ответ backend, сохранённые данные и события аналитики. В баг-репорте фиксирую воспроизводимые шаги и технические доказательства, чтобы команде было проще найти первопричину.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="mb-24" aria-labelledby="experience-title">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+        <div><p class="text-xs font-semibold uppercase tracking-[0.14em] text-apple-blue mb-2">Карьерный трек • 4+ года</p><h2 id="experience-title" class="text-3xl sm:text-5xl font-bold tracking-tight titanium-text">Опыт работы</h2></div>
+        <p class="text-sm sm:text-base text-apple-grayText max-w-md">От банковского desktop-ПО и интеграций до мобильного финтех-продукта и backend API.</p>
+      </div>
+      <div class="space-y-5">
+        <article class="bento-card p-6 sm:p-9">
+          <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-4 mb-6 pb-5 border-b border-black/5 dark:border-white/10">
+            <div><h3 class="text-2xl sm:text-3xl font-bold">Сравни.ру</h3><p class="text-base sm:text-lg font-semibold text-apple-blue mt-1">QA Engineer • Mobile iOS / Android &amp; REST API</p><p class="text-xs text-apple-grayText mt-1">Финансовый маркетплейс и цифровые финансовые сервисы</p></div>
+            <div class="lg:text-right"><div class="text-sm font-semibold">Апрель 2024 — настоящее время</div><div class="text-xs text-apple-grayText mt-1">2 года 7 месяцев на ноябрь 2026</div></div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-4 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03]"><h4 class="text-xs font-semibold text-apple-blue uppercase tracking-wider mb-2">Mobile QA</h4><p class="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">Тестирую мобильное приложение на iOS и Android: новые функции, пользовательские сценарии, регрессии, интеграции и поведение интерфейса на разных устройствах.</p></div>
+            <div class="p-4 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03]"><h4 class="text-xs font-semibold text-apple-blue uppercase tracking-wider mb-2">REST API и трафик</h4><p class="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">Проверяю REST API через Postman и анализирую сетевой трафик в Proxyman: параметры запросов, заголовки, ответы, статусы и обработку ошибок.</p></div>
+            <div class="p-4 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03]"><h4 class="text-xs font-semibold text-apple-blue uppercase tracking-wider mb-2">Диагностика дефектов</h4><p class="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">Локализую проблемы между frontend и backend, анализирую логи и состояние данных в MongoDB через Studio 3T, помогаю определить источник ошибки.</p></div>
+            <div class="p-4 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03]"><h4 class="text-xs font-semibold text-apple-blue uppercase tracking-wider mb-2">Аналитика и тестовая документация</h4><p class="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">Проверяю события и параметры AppMetrica / Firebase, анализирую требования, готовлю чек-листы и тест-кейсы, веду дефекты и результаты проверок в Jira и Allure TestOps.</p></div>
+          </div>
+          <div class="flex flex-wrap gap-2 mt-5"><span class="skill-tag">iOS / Android</span><span class="skill-tag">Postman</span><span class="skill-tag">Proxyman</span><span class="skill-tag">REST API</span><span class="skill-tag">MongoDB</span><span class="skill-tag">AppMetrica</span><span class="skill-tag">Firebase</span><span class="skill-tag">Allure TestOps</span></div>
+        </article>
+        <article class="bento-card p-6 sm:p-9">
+          <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-4 mb-6 pb-5 border-b border-black/5 dark:border-white/10">
+            <div><h3 class="text-2xl sm:text-3xl font-bold">R-Style SoftLab</h3><p class="text-base sm:text-lg font-semibold text-apple-purple mt-1">QA Engineer / Тестировщик банковского ПО</p><p class="text-xs text-apple-grayText mt-1">Разработка банковских систем и системная интеграция</p></div>
+            <div class="lg:text-right"><div class="text-sm font-semibold">Июль 2022 — март 2024</div><div class="text-xs text-apple-grayText mt-1">1 год 9 месяцев</div></div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="p-4 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03]"><h4 class="text-xs font-semibold text-apple-purple uppercase tracking-wider mb-2">Банковское ПО и интеграции</h4><p class="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">Тестировал банковское desktop-ПО и интеграции с внешними системами, включая взаимодействие с ФНС; устанавливал сборки и проверял бизнес-сценарии.</p></div>
+            <div class="p-4 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03]"><h4 class="text-xs font-semibold text-apple-purple uppercase tracking-wider mb-2">Тест-дизайн и автотесты</h4><p class="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">Разрабатывал тест-кейсы, чек-листы и тест-планы, оформлял баг-репорты. Выполнял прогоны существующих автотестов в TestComplete / DelphiScript и анализировал результаты.</p></div>
+            <div class="p-4 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03]"><h4 class="text-xs font-semibold text-apple-purple uppercase tracking-wider mb-2">Командная работа</h4><p class="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">Помогал адаптировать стажёров: объяснял предметную область банковских систем, процессы тестирования и правила оформления дефектов.</p></div>
+          </div>
+          <div class="flex flex-wrap gap-2 mt-5"><span class="skill-tag">Banking software</span><span class="skill-tag">ФНС</span><span class="skill-tag">TestComplete</span><span class="skill-tag">DelphiScript</span><span class="skill-tag">Regression testing</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="mb-24" aria-labelledby="projects-title">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+        <div><p class="text-xs font-semibold uppercase tracking-[0.14em] text-apple-blue mb-2">Практика разработки и автоматизации</p><h2 id="projects-title" class="text-3xl sm:text-5xl font-bold tracking-tight titanium-text">Собственный проект: Up-call</h2></div>
+        <p class="text-sm sm:text-base text-apple-grayText max-w-md">Применяю инженерный подход QA в разработке собственного Python-продукта.</p>
+      </div>
+      <article class="bento-card p-6 sm:p-9">
+        <div class="mb-6">
+          <h3 class="text-2xl sm:text-3xl font-bold mb-2">Up-call — платформа для контроля качества клиентских коммуникаций</h3>
+          <p class="text-sm sm:text-base text-apple-grayText leading-relaxed">Разрабатываю SaaS-продукт, который помогает компаниям оценивать качество разговоров сотрудников с клиентами. Сервис анализирует диалоги, проверяет их по заданным критериям, формирует результаты оценки и помогает находить точки роста в работе команды и клиентском сервисе. Проект находится в активной разработке.</p>
         </div>
-    </div>
-
-    <!-- Top Sticky Frosted-Glass Navbar -->
-    <header class="sticky top-0 z-40 apple-glass-nav transition-colors duration-300">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-2">
-            <a href="#about" class="flex items-center gap-2.5 group focus:outline-none min-w-0">
-                <div class="w-8 h-8 rounded-xl bg-gradient-to-b from-neutral-700 to-neutral-900 dark:from-white/90 dark:to-neutral-300 flex items-center justify-center text-white dark:text-black font-semibold text-xs tracking-tighter shadow-sm group-hover:scale-105 transition-transform shrink-0">
-                    ВВ
-                </div>
-                <div class="flex flex-col min-w-0">
-                    <span id="nav-name" data-editable="true" class="text-sm font-semibold tracking-tight leading-none truncate">Владислав Выголка</span>
-                    <span class="text-[10px] text-apple-grayText font-medium tracking-wide uppercase mt-0.5 truncate">QA Engineer • FinTech &amp; Mobile</span>
-                </div>
-            </a>
-
-            <nav class="hidden lg:flex items-center gap-6 text-xs font-medium text-apple-lightGrayText dark:text-apple-grayText">
-                <a href="#about" class="hover:text-black dark:hover:text-white transition-colors">Профиль</a>
-                <a href="#bento" class="hover:text-black dark:hover:text-white transition-colors">Навыки и стек</a>
-                <a href="#experience" class="hover:text-black dark:hover:text-white transition-colors">Опыт работы</a>
-                <a href="#education" class="hover:text-black dark:hover:text-white transition-colors">Образование</a>
-                <a href="#vcard" class="hover:text-black dark:hover:text-white transition-colors">Визитка и связь</a>
-            </nav>
-
-            <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
-                <button type="button" onclick="downloadStandaloneHTML()" title="Скачать чистый файл сайта index.html" class="flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-xs font-medium bg-apple-blue/15 text-apple-blue hover:bg-apple-blue hover:text-white transition-all cursor-pointer">
-                    <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                    </svg>
-                    <span class="hidden sm:inline">Скачать сайт (.html)</span>
-                </button>
-
-                <button type="button" id="edit-mode-btn" onclick="toggleEditMode()" title="Редактировать текст прямо на странице" class="flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-xs font-medium border border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10 transition-all cursor-pointer">
-                    <svg class="w-3.5 h-3.5 text-apple-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
-                    </svg>
-                    <span id="edit-mode-label" class="hidden md:inline">Редактировать</span>
-                </button>
-
-                <button type="button" id="reset-edits-btn" onclick="resetSavedContent()" title="Сбросить изменения" class="hidden items-center gap-1 px-2.5 py-1.5 rounded-pill text-xs font-medium text-red-500 bg-red-500/10 hover:bg-red-500/20 transition-all cursor-pointer">
-                    Сброс
-                </button>
-
-                <button type="button" id="theme-toggle-btn" onclick="toggleTheme()" aria-label="Переключить тему" class="w-8 h-8 rounded-full flex items-center justify-center border border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10 transition-all cursor-pointer">
-                    <svg id="icon-sun" class="w-4 h-4 text-amber-400 hidden dark:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="4"></circle>
-                        <path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"></path>
-                    </svg>
-                    <svg id="icon-moon" class="w-4 h-4 text-neutral-700 block dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-                    </svg>
-                </button>
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-4 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03]"><h4 class="text-xs font-semibold text-apple-blue uppercase tracking-wider mb-2">Разработка</h4><ul class="content-list text-sm text-neutral-700 dark:text-neutral-300"><li>Разработка backend на Python и проектирование REST API</li><li>Интеграция AI-сервисов для анализа диалогов и работы с транскрипциями</li><li>Реализация механизма оценки разговоров по настраиваемым критериям</li><li>Разработка многопользовательской модели с разделением данных организаций</li><li>Обработка ошибок внешних сервисов и диагностика этапов выполнения</li></ul></div>
+          <div class="p-4 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03]"><h4 class="text-xs font-semibold text-apple-green uppercase tracking-wider mb-2">QA и автоматизация</h4><ul class="content-list text-sm text-neutral-700 dark:text-neutral-300"><li>Проектирование тестовых сценариев для API и ключевой бизнес-логики</li><li>Разработка автоматизированных тестов на Python и pytest</li><li>Проверка корректности расчёта оценок и обработки различных результатов проверки</li><li>Тестирование валидации данных, негативных и граничных сценариев</li><li>Проверка изоляции данных организаций и устойчивости интеграций с AI-сервисами</li><li>Регрессионные проверки и анализ причин ошибок в процессе обработки</li></ul></div>
         </div>
-    </header>
+        <div class="flex flex-wrap gap-2 mt-5"><span class="skill-tag">Python</span><span class="skill-tag">pytest</span><span class="skill-tag">REST API</span><span class="skill-tag">AI integrations</span><span class="skill-tag">SaaS</span><span class="skill-tag">Backend QA</span></div>
+      </article>
+    </section>
 
-    <div id="edit-banner" class="hidden bg-apple-blue/15 border-b border-apple-blue/30 text-center py-2 px-4 text-xs text-apple-blue font-medium">
-        Режим конструктора активен: кликните на любой выделенный текст для редактирования. Изменения сохраняются автоматически.
-    </div>
+    <section id="education" class="mb-24" aria-labelledby="education-title">
+      <div class="text-center max-w-2xl mx-auto mb-10"><p class="text-xs font-semibold uppercase tracking-[0.14em] text-apple-blue mb-2">Академическая база</p><h2 id="education-title" class="text-3xl sm:text-5xl font-bold tracking-tight titanium-text mb-3">Образование</h2><p class="text-sm sm:text-base text-apple-grayText">Сетевые технологии и предметная подготовка в банковской сфере.</p></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <article class="bento-card p-6 sm:p-8"><span class="skill-tag mb-4">Высшее образование • 2022</span><h3 class="text-xl sm:text-2xl font-bold mb-2">Брянский государственный университет имени академика И.Г. Петровского</h3><p class="text-sm font-medium text-apple-blue mb-3">Физико-математический факультет • Сетевые технологии</p><p class="text-sm text-apple-grayText leading-relaxed">База по сетевым технологиям, протоколам и передаче данных, полезная при анализе клиент-серверного взаимодействия и сетевого трафика.</p></article>
+        <article class="bento-card p-6 sm:p-8"><span class="skill-tag mb-4">Повышение квалификации • 2023</span><h3 class="text-xl sm:text-2xl font-bold mb-2">Основы банковского дела и бухгалтерского учёта в коммерческом банке</h3><p class="text-sm font-medium text-apple-green mb-3">R-Style SoftLab</p><p class="text-sm text-apple-grayText leading-relaxed">Предметная подготовка по финансовой и банковской логике, бухгалтерскому учёту, отчётности и бизнес-процессам коммерческих банков.</p></article>
+      </div>
+    </section>
 
-    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0" aria-hidden="true">
-        <div class="ambient-glow top-14 left-1/2 -translate-x-1/2 max-w-full"></div>
-    </div>
+    <section id="contacts" class="mb-8" aria-labelledby="contacts-title">
+      <div class="text-center max-w-2xl mx-auto mb-10"><p class="text-xs font-semibold uppercase tracking-[0.14em] text-apple-blue mb-2">Контакты</p><h2 id="contacts-title" class="text-3xl sm:text-5xl font-bold tracking-tight titanium-text mb-3">Обсудим вашу вакансию?</h2><p class="text-sm sm:text-base text-apple-grayText">Открыт к предложениям QA Engineer, задачам по тестированию и профессиональному сотрудничеству.</p></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="wallet-card rounded-bento p-6 sm:p-8 text-white">
+          <p class="text-xs uppercase tracking-wider text-neutral-300 mb-2">Предпочтительный способ связи</p>
+          <h3 class="text-2xl font-bold mb-5">Владислав Выголка</h3>
+          <a href="mailto:v.vygolka@yandex.ru" class="block text-lg font-semibold text-white hover:underline mb-4">v.vygolka@yandex.ru</a>
+          <a href="tel:+79307313040" class="block text-base font-semibold text-neutral-200 hover:underline">+7 (930) 731-30-40</a>
+          <p class="text-xs text-neutral-400 mt-6 pt-5 border-t border-white/10">Москва • Удалённо / гибрид • Полная занятость</p>
+        </div>
+        <div class="bento-card p-6 sm:p-8 flex flex-col justify-center">
+          <h3 class="text-xl font-bold mb-3">Что указать в предложении</h3>
+          <p class="text-sm text-apple-grayText leading-relaxed mb-5">Название компании и позиции, основные задачи, технологический стек и формат работы. Так я смогу быстрее оценить соответствие роли своему опыту и ответить предметно.</p>
+          <a href="mailto:v.vygolka@yandex.ru?subject=Предложение%20о%20работе%20—%20QA%20Engineer" class="btn-apple-primary w-full py-3.5 px-5 text-sm font-semibold text-center">Написать по вакансии ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <main class="relative z-10 max-w-6xl w-full mx-auto px-4 sm:px-6 pt-12 sm:pt-20 pb-24 overflow-x-hidden">
+  <footer class="border-t border-black/10 dark:border-white/10 py-7 px-4 sm:px-6 text-xs text-apple-grayText">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3"><span class="font-semibold text-black dark:text-white">Владислав Выголка • QA Engineer</span><span>Mobile QA • REST API • FinTech • Москва</span><a href="#top" class="hover:text-apple-blue">Наверх ↑</a></div>
+  </footer>
 
-        <!-- HERO SECTION -->
-        <section id="about" class="relative z-10 text-center max-w-4xl mx-auto mb-20 sm:mb-24">
-            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-pill border border-black/10 dark:border-white/15 bg-white/70 dark:bg-white/5 backdrop-blur-md mb-7 shadow-sm max-w-full">
-                <span class="relative flex h-2.5 w-2.5 shrink-0">
-                    <span class="status-dot-pulse relative inline-flex rounded-full h-2.5 w-2.5 bg-apple-green"></span>
-                </span>
-                <span id="hero-status" data-editable="true" class="text-xs font-medium tracking-tight text-neutral-700 dark:text-neutral-200 truncate">
-                    Открыт к предложениям • Москва • Полная занятость / Удалённо
-                </span>
-            </div>
-
-            <p id="hero-role-overline" data-editable="true" class="text-xs sm:text-sm font-semibold uppercase tracking-[0.16em] text-apple-blue mb-3">
-                QA Инженер • Mobile (iOS / Android) &amp; REST API • FinTech
-            </p>
-
-            <h1 id="hero-headline" data-editable="true" class="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.06] titanium-text mb-6">
-                Владислав Выголка.
-            </h1>
-
-            <p id="hero-subtitle" data-editable="true" class="text-base sm:text-xl md:text-2xl text-apple-lightGrayText dark:text-apple-grayText font-normal max-w-3xl mx-auto leading-relaxed mb-10">
-                Обеспечиваю качество мобильных приложений <span class="text-black dark:text-white font-medium">iOS и Android</span>, тестирую <span class="text-black dark:text-white font-medium">REST API</span> и финансовые сервисы в <span class="text-black dark:text-white font-medium">Сравни.ру</span>. Глубокая локализация дефектов на стыке frontend/backend и верификация аналитики.
-            </p>
-
-            <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
-                <button type="button" onclick="openQuickMailModal('Предложение о сотрудничестве — QA Инженер')" class="btn-apple-primary px-6 py-3.5 text-sm sm:text-base inline-flex items-center gap-2.5 cursor-pointer">
-                    <svg class="w-4 h-4 pointer-events-none shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                    </svg>
-                    <span class="pointer-events-none">Написать: v.vygolka@yandex.ru</span>
-                    <span class="px-2 py-0.5 text-[10px] rounded-full bg-white/20 text-white font-semibold uppercase tracking-wide pointer-events-none">Приоритет</span>
-                </button>
-
-                <a href="tel:+79307313040" onclick="triggerPhoneCall()" class="btn-apple-secondary px-6 py-3.5 text-sm sm:text-base inline-flex items-center gap-2 cursor-pointer" target="_blank" rel="noopener noreferrer">
-                    <svg class="w-4 h-4 text-apple-green pointer-events-none shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                    </svg>
-                    <span class="pointer-events-none">+7 (930) 731-30-40</span>
-                </a>
-
-                <button type="button" onclick="downloadVCard()" class="btn-apple-secondary px-5 py-3.5 text-sm sm:text-base inline-flex items-center gap-2 cursor-pointer">
-                    <svg class="w-4 h-4 text-apple-blue pointer-events-none shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                    </svg>
-                    <span class="pointer-events-none">Скачать визитку (.vcf)</span>
-                </button>
-            </div>
-
-            <div class="mt-14 pt-8 border-t border-black/5 dark:border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
-                <div>
-                    <div id="stat-1-val" data-editable="true" class="text-2xl sm:text-3xl font-bold tracking-tight">4 г. 4 мес.</div>
-                    <div id="stat-1-lbl" data-editable="true" class="text-xs text-apple-grayText mt-1">Опыта в FinTech и Банковском QA</div>
-                </div>
-                <div>
-                    <div id="stat-2-val" data-editable="true" class="text-2xl sm:text-3xl font-bold tracking-tight">iOS &amp; Android</div>
-                    <div id="stat-2-lbl" data-editable="true" class="text-xs text-apple-grayText mt-1">Мобильное тестирование в Сравни.ру</div>
-                </div>
-                <div>
-                    <div id="stat-3-val" data-editable="true" class="text-2xl sm:text-3xl font-bold tracking-tight">REST API</div>
-                    <div id="stat-3-lbl" data-editable="true" class="text-xs text-apple-grayText mt-1">Postman, Proxyman, Swagger, Логи</div>
-                </div>
-                <div>
-                    <div id="stat-4-val" data-editable="true" class="text-2xl sm:text-3xl font-bold tracking-tight">Аналитика</div>
-                    <div id="stat-4-lbl" data-editable="true" class="text-xs text-apple-grayText mt-1">AppMetrica, Firebase, Яндекс.Метрика</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- BENTO GRID SECTION -->
-        <section id="bento" class="relative z-10 mb-24">
-            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
-                <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-apple-blue mb-2">Технологический профиль</p>
-                    <h2 id="bento-section-title" data-editable="true" class="text-3xl sm:text-5xl font-bold tracking-tight titanium-text">
-                        Компетенции и инструменты.
-                    </h2>
-                </div>
-                <p id="bento-section-sub" data-editable="true" class="text-sm sm:text-base text-apple-grayText max-w-md">
-                    От тестирования мобильных сборок и сниффинга трафика через Proxyman до проверки банковских интеграций с ФНС и продуктовой аналитики.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-5">
-                <!-- Card 1: Pipeline & Proxyman -->
-                <div class="bento-card md:col-span-7 p-6 sm:p-9 flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-                            <span class="px-3 py-1 rounded-pill text-[11px] font-semibold uppercase tracking-wider bg-apple-blue/15 text-apple-blue">
-                                Mobile &amp; Backend QA
-                            </span>
-                            <div class="flex items-center gap-1.5">
-                                <button type="button" onclick="toggleInspectorMode()" id="toggle-inspector-btn" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-xs font-medium bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 transition-colors cursor-pointer">Лог Proxyman</button>
-                                <button type="button" onclick="runPipelineSimulation()" id="run-pipeline-btn" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-pill text-xs font-medium bg-apple-blue text-white hover:bg-apple-blueHover transition-colors cursor-pointer">
-                                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"></path>
-                                    </svg>
-                                    <span>Тест-раннер</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <h3 id="bento-1-title" data-editable="true" class="text-2xl sm:text-3xl font-bold tracking-tight mb-3">
-                            Глубокая локализация дефектов Frontend &amp; Backend
-                        </h3>
-                        <p id="bento-1-desc" data-editable="true" class="text-sm sm:text-base text-apple-grayText leading-relaxed mb-6">
-                            Тестирую мобильные приложения (iOS / Android) и веб-сервисы на всех уровнях: анализирую запросы и ответы REST API через Postman и Proxyman, проверяю логи, базы данных Studio 3T и события аналитики в AppMetrica и Firebase.
-                        </p>
-                    </div>
-
-                    <div class="rounded-2xl bg-black/5 dark:bg-black/45 border border-black/10 dark:border-white/10 p-4 sm:p-5 max-w-full min-w-0">
-                        <div class="flex flex-wrap items-center justify-between gap-2 text-xs text-apple-grayText mb-3.5 min-w-0">
-                            <div class="flex items-center gap-1.5 min-w-0">
-                                <span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56] shrink-0"></span>
-                                <span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e] shrink-0"></span>
-                                <span class="w-2.5 h-2.5 rounded-full bg-[#27c93f] shrink-0"></span>
-                                <span class="ml-2 font-mono text-[11px] text-neutral-500 dark:text-neutral-400 truncate">sravni-qa-inspector — proxyman</span>
-                            </div>
-                            <span id="pipeline-status-badge" class="font-mono text-[11px] text-apple-green flex items-center gap-1 shrink-0">● Build &amp; API Verified</span>
-                        </div>
-
-                        <div id="qa-runner-view" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 font-mono text-xs min-w-0">
-                            <div id="pipe-step-1" class="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-white/80 dark:bg-white/5 border border-black/5 dark:border-white/10 transition-all min-w-0">
-                        <span class="flex items-center gap-2 truncate">
-                            <span class="w-2 h-2 rounded-full bg-apple-green shrink-0"></span>
-                            <span class="truncate">iOS &amp; Android Builds</span>
-                        </span>
-                        <span class="text-apple-green font-semibold shrink-0">Regression OK</span>
-                    </div>
-                            <div id="pipe-step-2" class="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-white/80 dark:bg-white/5 border border-black/5 dark:border-white/10 transition-all min-w-0">
-                        <span class="flex items-center gap-2 truncate">
-                            <span class="w-2 h-2 rounded-full bg-apple-green shrink-0"></span>
-                            <span class="truncate">REST API (Proxyman)</span>
-                        </span>
-                        <span class="text-apple-green font-semibold shrink-0">200 OK • Valid</span>
-                    </div>
-                            <div id="pipe-step-3" class="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-white/80 dark:bg-white/5 border border-black/5 dark:border-white/10 transition-all min-w-0">
-                        <span class="flex items-center gap-2 truncate">
-                            <span class="w-2 h-2 rounded-full bg-apple-green shrink-0"></span>
-                            <span class="truncate">AppMetrica / Firebase</span>
-                        </span>
-                        <span class="text-apple-blue font-semibold shrink-0">Events Tracked</span>
-                    </div>
-                            <div id="pipe-step-4" class="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-white/80 dark:bg-white/5 border border-black/5 dark:border-white/10 transition-all min-w-0">
-                        <span class="flex items-center gap-2 truncate">
-                            <span class="w-2 h-2 rounded-full bg-apple-green shrink-0"></span>
-                            <span class="truncate">External Integrations</span>
-                        </span>
-                        <span class="text-apple-green font-semibold shrink-0">0 Critical Bugs</span>
-                    </div>
-                        </div>
-
-                        <div id="qa-proxyman-view" class="font-mono text-[11px] space-y-1.5 text-neutral-700 dark:text-neutral-300 min-w-0 hidden">
-                            <div class="p-2 rounded-xl bg-white/80 dark:bg-white/5 border border-black/5 dark:border-white/10 flex items-center justify-between gap-2">
-                                <span class="truncate"><strong class="text-apple-blue">POST</strong> /api/v2/mobile/credit-offers/calculate</span>
-                                <span class="px-2 py-0.5 rounded bg-apple-green/20 text-apple-green font-semibold shrink-0">200 OK • 84ms</span>
-                            </div>
-                            <div class="p-2 rounded-xl bg-white/80 dark:bg-white/5 border border-black/5 dark:border-white/10 flex items-center justify-between gap-2">
-                                <span class="truncate"><strong class="text-purple-400">EVENT</strong> AppMetrica: offer_card_viewed {platform: "iOS"}</span>
-                                <span class="px-2 py-0.5 rounded bg-apple-blue/20 text-apple-blue font-semibold shrink-0">Validated</span>
-                            </div>
-                            <div class="p-2 rounded-xl bg-white/80 dark:bg-white/5 border border-black/5 dark:border-white/10 flex items-center justify-between gap-2">
-                                <span class="truncate"><strong class="text-amber-400">DB</strong> Studio 3T: user_session.status == "VERIFIED"</span>
-                                <span class="px-2 py-0.5 rounded bg-apple-green/20 text-apple-green font-semibold shrink-0">Matched</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2: Experience Metric -->
-                <div class="bento-card md:col-span-5 p-6 sm:p-9 flex flex-col justify-between relative overflow-hidden">
-                    <div>
-                        <span class="px-3 py-1 rounded-pill text-[11px] font-semibold uppercase tracking-wider bg-apple-green/15 text-apple-green">
-                            FinTech &amp; Banking QA
-                        </span>
-                        <div class="mt-6 mb-2">
-                            <span id="bento-2-metric" data-editable="true" class="text-5xl sm:text-6xl font-extrabold tracking-tighter apple-blue-gradient-text">
-                                4+ года
-                            </span>
-                        </div>
-                        <h3 id="bento-2-title" data-editable="true" class="text-xl sm:text-2xl font-bold tracking-tight mb-2">
-                            Коммерческого опыта в крупных ИТ и FinTech проектах
-                        </h3>
-                        <p id="bento-2-desc" data-editable="true" class="text-sm text-apple-grayText leading-relaxed">
-                            <strong class="text-black dark:text-white">2 года 7 месяцев</strong> в <strong class="text-black dark:text-white">Сравни.ру</strong> (мобильная разработка и финансовые маркетплейсы) и <strong class="text-black dark:text-white">1 год 9 месяцев</strong> в <strong class="text-black dark:text-white">R-Style SoftLab</strong> (банковское ПО и госинтеграции с ФНС).
-                        </p>
-                    </div>
-
-                    <div class="mt-7 pt-5 border-t border-black/5 dark:border-white/10 space-y-3">
-                        <div>
-                            <div class="flex justify-between text-xs font-medium mb-1 gap-2">
-                                <span class="truncate">Сравни.ру • QA инженер (Mobile &amp; API)</span>
-                                <span class="text-apple-blue font-semibold shrink-0">2 г. 7 мес.</span>
-                            </div>
-                            <div class="w-full h-2 rounded-full bg-black/10 dark:bg-white/10 overflow-hidden">
-                                <div class="h-full bg-apple-blue rounded-full w-[62%]"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between text-xs font-medium mb-1 gap-2">
-                                <span class="truncate">R-Style SoftLab • Тестировщик банковского ПО</span>
-                                <span class="text-purple-400 font-semibold shrink-0">1 г. 9 мес.</span>
-                            </div>
-                            <div class="w-full h-2 rounded-full bg-black/10 dark:bg-white/10 overflow-hidden">
-                                <div class="h-full bg-purple-500 rounded-full w-[42%]"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3: Interactive Skills Stack -->
-                <div class="bento-card md:col-span-7 p-6 sm:p-9 flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-                            <span class="px-3 py-1 rounded-pill text-[11px] font-semibold uppercase tracking-wider bg-purple-500/15 text-purple-400">
-                                Стек и навыки из резюме
-                            </span>
-                            <div class="flex flex-wrap gap-1 bg-black/5 dark:bg-white/5 p-1 rounded-pill border border-black/5 dark:border-white/10 text-[11px] font-medium">
-                                <button type="button" onclick="filterSkills('all', this)" class="skill-tab-btn px-2.5 py-1 rounded-pill transition-all cursor-pointer bg-apple-blue text-white">Все</button>
-                                <button type="button" onclick="filterSkills('mobile', this)" class="skill-tab-btn px-2.5 py-1 rounded-pill hover:text-apple-blue transition-all cursor-pointer">Mobile &amp; Аналитика</button>
-                                <button type="button" onclick="filterSkills('api', this)" class="skill-tab-btn px-2.5 py-1 rounded-pill hover:text-apple-blue transition-all cursor-pointer">API &amp; Данные</button>
-                                <button type="button" onclick="filterSkills('qa', this)" class="skill-tab-btn px-2.5 py-1 rounded-pill hover:text-apple-blue transition-all cursor-pointer">Процессы &amp; Автотесты</button>
-                            </div>
-                        </div>
-
-                        <h3 id="bento-3-title" data-editable="true" class="text-2xl font-bold tracking-tight mb-2">
-                            Инструментарий инженера по тестированию
-                        </h3>
-                        <p id="tech-stack-info" class="text-xs sm:text-sm text-apple-blue font-medium min-h-[42px] mb-5 p-3 rounded-2xl bg-apple-blue/10 border border-apple-blue/20">
-                            Нажмите на любой навык ниже, чтобы посмотреть практический опыт его применения в Сравни.ру и R-Style SoftLab.
-                        </p>
-                    </div>
-
-                    <div class="flex flex-wrap gap-2" id="tech-pills-container">
-                        <button type="button" data-cat="mobile" onclick="showTechDetail('Тестирование iOS', 'Функциональное, регрессионное и интеграционное тестирование мобильного приложения Сравни.ру на iOS, работа со сборками и перехват трафика.')" class="tech-pill px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-medium bg-black/5 dark:bg-white/10 hover:bg-apple-blue hover:text-white transition-all cursor-pointer">
-                            🍎 Тестирование iOS
-                        </button>
-                        <button type="button" data-cat="mobile" onclick="showTechDetail('Тестирование Android &amp; Android SDK', 'Проверка сборок Android, работа с Android SDK, логами, отладка клиентских ошибок и проверка адаптивности интерфейса.')" class="tech-pill px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-medium bg-black/5 dark:bg-white/10 hover:bg-apple-blue hover:text-white transition-all cursor-pointer">
-                            🤖 Android &amp; Android SDK
-                        </button>
-                        <button type="button" data-cat="api" onclick="showTechDetail('REST API &amp; Интеграции', 'Проверка клиент-серверного взаимодействия, тестирование интеграций с внешними сервисами и государственными системами (ФНС).')" class="tech-pill px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-medium bg-black/5 dark:bg-white/10 hover:bg-apple-blue hover:text-white transition-all cursor-pointer">
-                            🌐 REST API
-                        </button>
-                        <button type="button" data-cat="api" onclick="showTechDetail('Postman &amp; Swagger', 'Отправка и валидация запросов к бэкенду, работа со спецификациями OpenAPI/Swagger, локализация ошибок на стороне сервера.')" class="tech-pill px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-medium bg-black/5 dark:bg-white/10 hover:bg-apple-blue hover:text-white transition-all cursor-pointer">
-                            🚀 Postman &amp; Swagger
-                        </button>
-                        <button type="button" data-cat="mobile" onclick="showTechDetail('Proxyman', 'Сниффинг и анализ HTTP/HTTPS-трафика мобильных приложений iOS/Android, проверка заголовков, тела запросов и ответов backend.')" class="tech-pill px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-medium bg-black/5 dark:bg-white/10 hover:bg-apple-blue hover:text-white transition-all cursor-pointer">
-                            📡 Proxyman
-                        </button>
-                        <button type="button" data-cat="mobile" onclick="showTechDetail('AppMetrica &amp; Firebase', 'Верификация продуктовой аналитики: проверка корректности отправки пользовательских событий и параметров из мобильного приложения.')" class="tech-pill px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-medium bg-black/5 dark:bg-white/10 hover:bg-apple-blue hover:text-white transition-all cursor-pointer">
-                            📊 AppMetrica &amp; Firebase
-                        </button>
-                        <button type="button" data-cat="mobile" onclick="showTechDetail('Яндекс.Метрика', 'Контроль событий веб- и мобильной аналитики для отслеживания ключевых конверсионных пользовательских флоу.')" class="tech-pill px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-medium bg-black/5 dark:bg-white/10 hover:bg-apple-blue hover:text-white transition-all cursor-pointer">
-                            📈 Яндекс.Метрика
-                        </button>
-                        <button type="button" data-cat="api" onclick="showTechDetail('Studio 3T (MongoDB)', 'Работа с NoSQL базами данных через Studio 3T: проверка сохраненных документов, валидация состояния данных после выполнения API-запросов.')" class="tech-pill px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-medium bg-black/5 dark:bg-white/10 hover:bg-apple-blue hover:text-white transition-all cursor-pointer">
-                            🗄️ Studio 3T
-                        </button>
-                        <button type="button" data-cat="qa" onclick="showTechDetail('Atlassian Jira', 'Ведение тестовой документации, заведение и сопровождение баг-репортов, взаимодействие с разработчиками и системными аналитиками.')" class="tech-pill px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-medium bg-black/5 dark:bg-white/10 hover:bg-apple-blue hover:text-white transition-all cursor-pointer">
-                            📋 Atlassian Jira
-                        </button>
-                        <button type="button" data-cat="api" onclick="showTechDetail('Git', 'Работа с системой контроля версий, ветками, версиями сборок и тестовыми репозиториями.')" class="tech-pill px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-medium bg-black/5 dark:bg-white/10 hover:bg-apple-blue hover:text-white transition-all cursor-pointer">
-                            🌿 Git
-                        </button>
-                        <button type="button" data-cat="qa" onclick="showTechDetail('TestComplete &amp; DelphiScript', 'Проведение прогонов автотестов и анализ результатов автоматизированного тестирования банковского ПО в R-Style SoftLab.')" class="tech-pill px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-medium bg-black/5 dark:bg-white/10 hover:bg-apple-blue hover:text-white transition-all cursor-pointer">
-                            ⚙️ TestComplete (DelphiScript)
-                        </button>
-                        <button type="button" data-cat="qa" onclick="showTechDetail('Тест-кейсы, Чек-листы, ТЗ и Техдокументация', 'Анализ требований, разработка технических заданий, составление тест-планов и расширение покрытия ключевых пользовательских сценариев.')" class="tech-pill px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-medium bg-black/5 dark:bg-white/10 hover:bg-apple-blue hover:text-white transition-all cursor-pointer">
-                            📝 Тест-кейсы, ТЗ и Документация
-                        </button>
-                        <button type="button" data-cat="qa" onclick="showTechDetail('UI &amp; Usability-тестирование', 'Оценка удобства пользовательского интерфейса, тестирование UI на соответствие макетам и гайдлайнам платформ iOS/Android.')" class="tech-pill px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-medium bg-black/5 dark:bg-white/10 hover:bg-apple-blue hover:text-white transition-all cursor-pointer">
-                            ✨ UI &amp; Usability QA
-                        </button>
-                        <button type="button" data-cat="qa" onclick="showTechDetail('Функциональное, Регрессионное и Модульное QA', 'Полный цикл ручного тестирования от модульной проверки новых фич до комплексного регресса перед выкаткой релиза.')" class="tech-pill px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-medium bg-black/5 dark:bg-white/10 hover:bg-apple-blue hover:text-white transition-all cursor-pointer">
-                            🛡️ Функциональное, Модульное &amp; Регресс
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Card 4: Work Ethic -->
-                <div class="bento-card md:col-span-5 p-6 sm:p-9 flex flex-col justify-between bg-gradient-to-br from-apple-blue/10 via-transparent to-purple-500/10">
-                    <div>
-                        <span class="px-3 py-1 rounded-pill text-[11px] font-semibold uppercase tracking-wider bg-amber-500/15 text-amber-400">
-                            Инженерный подход
-                        </span>
-                        <h3 id="bento-4-title" data-editable="true" class="text-2xl sm:text-3xl font-bold tracking-tight mt-5 mb-3 leading-snug">
-                            Точная локализация причин, а не просто фиксация симптомов
-                        </h3>
-                        <p id="bento-4-desc" data-editable="true" class="text-sm text-apple-grayText leading-relaxed">
-                            Перед заведением баг-репорта определяю источник проблемы (frontend или backend), прикладываю логи, дампы запросов из Proxyman/Postman и шаги воспроизведения. Активно взаимодействую с аналитиками и разработчиками еще на этапе уточнения требований.
-                        </p>
-                    </div>
-
-                    <div class="mt-6 pt-4 border-t border-black/5 dark:border-white/10 space-y-2 text-xs">
-                        <div class="flex items-center justify-between gap-2 text-apple-grayText">
-                            <span>Формат работы</span>
-                            <span class="font-semibold text-black dark:text-white text-right">Удалённо • Полная занятость</span>
-                        </div>
-                        <div class="flex items-center justify-between gap-2 text-apple-grayText">
-                            <span>Город проживания</span>
-                            <span class="font-semibold text-black dark:text-white text-right">Москва (готов к редким командировкам)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- EXPERIENCE TIMELINE SECTION -->
-        <section id="experience" class="relative z-10 mb-24">
-            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
-                <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-apple-blue mb-2">Карьерный трек • 4 года 4 месяца</p>
-                    <h2 id="exp-section-title" data-editable="true" class="text-3xl sm:text-5xl font-bold tracking-tight titanium-text">
-                        Опыт работы.
-                    </h2>
-                </div>
-                <p id="exp-section-sub" data-editable="true" class="text-sm sm:text-base text-apple-grayText max-w-md">
-                    Практический опыт обеспечения качества в ведущих российских финтех- и банковских ИТ-компаниях.
-                </p>
-            </div>
-
-            <div class="space-y-6">
-                <!-- Sravni.ru -->
-                <div class="bento-card p-6 sm:p-10 relative overflow-hidden">
-                    <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 mb-7 pb-6 border-b border-black/5 dark:border-white/10">
-                        <div class="flex items-start gap-4">
-                            <div class="w-14 h-14 rounded-2xl bg-apple-blue/15 text-apple-blue flex items-center justify-center font-bold text-xl shrink-0 border border-apple-blue/30">
-                                СР
-                            </div>
-                            <div class="min-w-0">
-                                <div class="flex flex-wrap items-center gap-2.5 mb-1">
-                                    <h3 id="job-1-company" data-editable="true" class="text-2xl sm:text-3xl font-bold tracking-tight">
-                                        Сравни.ру, ООО
-                                    </h3>
-                                    <span class="px-3 py-0.5 rounded-pill text-[11px] font-semibold bg-apple-green/15 text-apple-green">
-                                        Настоящее время
-                                    </span>
-                                </div>
-                                <p id="job-1-role" data-editable="true" class="text-base sm:text-lg font-semibold text-apple-blue">
-                                    QA инженер (Mobile iOS / Android &amp; REST API)
-                                </p>
-                                <p class="text-xs text-apple-grayText mt-1">
-                                    Москва • sravni.ru • Финансовый маркетплейс, платежные системы и онлайн-сервисы
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="flex flex-col lg:items-end shrink-0">
-                            <span id="job-1-dates" data-editable="true" class="text-sm font-semibold text-black dark:text-white">
-                                Апрель 2024 — настоящее время
-                            </span>
-                            <span class="text-xs text-apple-grayText mt-0.5">2 года 7 месяцев</span>
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-7">
-                        <div class="p-4 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03] border border-black/5 dark:border-white/5">
-                            <div class="text-xs font-semibold text-apple-blue uppercase tracking-wider mb-1">Mobile QA (iOS / Android)</div>
-                            <p id="job-1-b1" data-editable="true" class="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
-                                Провожу тестирование мобильного приложения (iOS / Android), включая функциональное, регрессионное и интеграционное тестирование.
-                            </p>
-                        </div>
-
-                        <div class="p-4 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03] border border-black/5 dark:border-white/5">
-                            <div class="text-xs font-semibold text-apple-blue uppercase tracking-wider mb-1">REST API &amp; Анализ трафика</div>
-                            <p id="job-1-b2" data-editable="true" class="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
-                                Тестирую REST API (Postman, Proxyman), анализирую запросы/ответы и выявляю причины ошибок на стороне backend.
-                            </p>
-                        </div>
-
-                        <div class="p-4 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03] border border-black/5 dark:border-white/5">
-                            <div class="text-xs font-semibold text-apple-blue uppercase tracking-wider mb-1">Локализация дефектов &amp; Интеграции</div>
-                            <p id="job-1-b3" data-editable="true" class="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
-                                Локализую дефекты (frontend / backend), работаю с логами и сетевыми запросами, участвую в тестировании интеграций с внешними сервисами.
-                            </p>
-                        </div>
-
-                        <div class="p-4 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03] border border-black/5 dark:border-white/5">
-                            <div class="text-xs font-semibold text-apple-blue uppercase tracking-wider mb-1">Продуктовая аналитика &amp; Покрытие</div>
-                            <p id="job-1-b4" data-editable="true" class="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
-                                Работаю с аналитикой (AppMetrica, Firebase) для проверки событий, анализирую задачи, формирую тестовые сценарии и чек-листы, улучшаю тестовое покрытие ключевых флоу и взаимодействую с разработчиками и аналитиками для уточнения требований.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="px-3 py-1 rounded-pill text-xs font-medium bg-apple-blue/10 text-apple-blue">iOS &amp; Android</span>
-                        <span class="px-3 py-1 rounded-pill text-xs font-medium bg-apple-blue/10 text-apple-blue">Postman</span>
-                        <span class="px-3 py-1 rounded-pill text-xs font-medium bg-apple-blue/10 text-apple-blue">Proxyman</span>
-                        <span class="px-3 py-1 rounded-pill text-xs font-medium bg-apple-blue/10 text-apple-blue">REST API</span>
-                        <span class="px-3 py-1 rounded-pill text-xs font-medium bg-apple-blue/10 text-apple-blue">AppMetrica</span>
-                        <span class="px-3 py-1 rounded-pill text-xs font-medium bg-apple-blue/10 text-apple-blue">Firebase</span>
-                    </div>
-                </div>
-
-                <!-- R-Style SoftLab -->
-                <div class="bento-card p-6 sm:p-10 relative overflow-hidden">
-                    <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 mb-7 pb-6 border-b border-black/5 dark:border-white/10">
-                        <div class="flex items-start gap-4">
-                            <div class="w-14 h-14 rounded-2xl bg-purple-500/15 text-purple-400 flex items-center justify-center font-bold text-xl shrink-0 border border-purple-500/30">
-                                RS
-                            </div>
-                            <div class="min-w-0">
-                                <div class="flex flex-wrap items-center gap-2.5 mb-1">
-                                    <h3 id="job-2-company" data-editable="true" class="text-2xl sm:text-3xl font-bold tracking-tight">
-                                        R-Style SoftLab
-                                    </h3>
-                                    <span class="px-3 py-0.5 rounded-pill text-[11px] font-semibold bg-purple-500/15 text-purple-400">
-                                        Банковское ПО и интеграции
-                                    </span>
-                                </div>
-                                <p id="job-2-role" data-editable="true" class="text-base sm:text-lg font-semibold text-purple-400">
-                                    Тестировщик
-                                </p>
-                                <p class="text-xs text-apple-grayText mt-1">
-                                    Москва • www.softlab.ru • Разработка банковского ПО, системная интеграция и автоматизация бизнес-процессов
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="flex flex-col lg:items-end shrink-0">
-                            <span id="job-2-dates" data-editable="true" class="text-sm font-semibold text-black dark:text-white">
-                                Июль 2022 — Март 2024
-                            </span>
-                            <span class="text-xs text-apple-grayText mt-0.5">1 год 9 месяцев</span>
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-7">
-                        <div class="p-4 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03] border border-black/5 dark:border-white/5">
-                            <div class="text-xs font-semibold text-purple-400 uppercase tracking-wider mb-1">Банковское ПО &amp; ФНС</div>
-                            <p id="job-2-b1" data-editable="true" class="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
-                                Проводил ручное тестирование банковского ПО, участвовал в тестировании интеграций с ФНС, работал с установкой и проверкой сборок.
-                            </p>
-                        </div>
-
-                        <div class="p-4 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03] border border-black/5 dark:border-white/5">
-                            <div class="text-xs font-semibold text-purple-400 uppercase tracking-wider mb-1">Тест-дизайн &amp; Автотесты</div>
-                            <p id="job-2-b2" data-editable="true" class="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
-                                Писал и актуализировал тест-кейсы и тест-планы, заводил и сопровождал баг-репорты. Проводил прогоны автотестов (TestComplete, DelphiScript).
-                            </p>
-                        </div>
-
-                        <div class="p-4 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03] border border-black/5 dark:border-white/5">
-                            <div class="text-xs font-semibold text-purple-400 uppercase tracking-wider mb-1">Наставничество &amp; Обучение</div>
-                            <p id="job-2-b3" data-editable="true" class="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
-                                Консультировал стажёров и участвовал в их обучении и погружении в процессы тестирования банковских систем.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="px-3 py-1 rounded-pill text-xs font-medium bg-purple-500/10 text-purple-400">Банковское ПО</span>
-                        <span class="px-3 py-1 rounded-pill text-xs font-medium bg-purple-500/10 text-purple-400">Интеграции с ФНС</span>
-                        <span class="px-3 py-1 rounded-pill text-xs font-medium bg-purple-500/10 text-purple-400">TestComplete</span>
-                        <span class="px-3 py-1 rounded-pill text-xs font-medium bg-purple-500/10 text-purple-400">DelphiScript</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- EDUCATION SECTION -->
-        <section id="education" class="relative z-10 mb-24">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-apple-blue mb-2">Академическая база и личный профиль</p>
-                <h2 id="edu-section-title" data-editable="true" class="text-3xl sm:text-5xl font-bold tracking-tight titanium-text mb-3">
-                    Образование и курсы.
-                </h2>
-                <p class="text-sm sm:text-base text-apple-grayText">
-                    Фундаментальное высшее образование в области сетевых технологий и профильная подготовка в банковском деле.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
-                <div class="bento-card p-6 sm:p-8 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between gap-2 mb-5">
-                            <span class="px-3 py-1 rounded-pill text-xs font-semibold bg-apple-blue/15 text-apple-blue">
-                                Высшее образование • 2022
-                            </span>
-                            <span class="text-xs text-apple-grayText">г. Брянск</span>
-                        </div>
-                        <h3 id="edu-1-title" data-editable="true" class="text-xl sm:text-2xl font-bold tracking-tight mb-2">
-                            Брянский государственный университет им. И.Г. Петровского
-                        </h3>
-                        <p id="edu-1-faculty" data-editable="true" class="text-sm font-medium text-apple-blue mb-3">
-                            Физико-математический факультет • Сетевые технологии
-                        </p>
-                        <p class="text-xs sm:text-sm text-apple-grayText leading-relaxed">
-                            Глубокое понимание сетевых протоколов, клиент-серверной архитектуры и передачи данных, применяемое при анализе трафика и отладке распределенных API.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="bento-card p-6 sm:p-8 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between gap-2 mb-5">
-                            <span class="px-3 py-1 rounded-pill text-xs font-semibold bg-apple-green/15 text-apple-green">
-                                Повышение квалификации • 2023
-                            </span>
-                            <span class="text-xs text-apple-grayText">Банковское дело</span>
-                        </div>
-                        <h3 id="edu-2-title" data-editable="true" class="text-xl sm:text-2xl font-bold tracking-tight mb-2">
-                            Основы банковского дела и бухгалтерского учета в коммерческом банке
-                        </h3>
-                        <p id="edu-2-org" data-editable="true" class="text-sm font-medium text-apple-green mb-3">
-                            R-Style SoftLab • Банковское дело
-                        </p>
-                        <p class="text-xs sm:text-sm text-apple-grayText leading-relaxed">
-                            Предметная экспертиза в финансовой и банковской логике, бухгалтерском учете, отчетности и бизнес-процессах коммерческих банков.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bento-card p-6 sm:p-7 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs sm:text-sm">
-                <div class="flex items-center gap-3.5 min-w-0">
-                    <div class="w-10 h-10 rounded-2xl bg-apple-blue/15 text-apple-blue flex items-center justify-center shrink-0 font-semibold">
-                        28
-                    </div>
-                    <div class="min-w-0">
-                        <div class="text-apple-grayText text-xs">Возраст и гражданство</div>
-                        <div id="info-personal" data-editable="true" class="font-semibold truncate">28 лет (20.01.1998) • Гражданство РФ</div>
-                    </div>
-                </div>
-                <div class="flex items-center gap-3.5 min-w-0">
-                    <div class="w-10 h-10 rounded-2xl bg-purple-500/15 text-purple-400 flex items-center justify-center shrink-0 font-semibold">
-                        RU
-                    </div>
-                    <div class="min-w-0">
-                        <div class="text-apple-grayText text-xs">Знание языков</div>
-                        <div id="info-lang" data-editable="true" class="font-semibold truncate">Русский — Родной</div>
-                    </div>
-                </div>
-                <div class="flex items-center gap-3.5 min-w-0">
-                    <div class="w-10 h-10 rounded-2xl bg-apple-green/15 text-apple-green flex items-center justify-center shrink-0 font-semibold">
-                        B
-                    </div>
-                    <div class="min-w-0">
-                        <div class="text-apple-grayText text-xs">Опыт вождения</div>
-                        <div id="info-drive" data-editable="true" class="font-semibold truncate">Права категории B • Собственный авто</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- DIGITAL CARD & CONTACT SECTION -->
-        <section id="vcard" class="relative z-10">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-apple-blue mb-2">Apple Wallet Style</p>
-                <h2 id="contact-section-title" data-editable="true" class="text-3xl sm:text-5xl font-bold tracking-tight titanium-text mb-3">
-                    Цифровая визитка и контакты.
-                </h2>
-                <p id="contact-section-sub" data-editable="true" class="text-sm sm:text-base text-apple-grayText">
-                    Скопируйте контакт в один клик, сохраните карточку `.vcf` в телефон или отправьте письмо напрямую через форму для работодателя.
-                </p>
-            </div>
-
-            <div id="contact" class="grid grid-cols-1 lg:grid-cols-12 gap-7 items-start">
-                <div class="lg:col-span-7 flex flex-col gap-5 min-w-0 max-w-full">
-                    <div class="wallet-card rounded-bento p-6 sm:p-9 text-white relative overflow-hidden min-w-0 max-w-full">
-                        <div class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-apple-blue/25 blur-3xl pointer-events-none"></div>
-
-                        <div class="flex items-start justify-between gap-4 mb-8">
-                            <div class="flex items-center gap-4 min-w-0">
-                                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-white/20 to-white/5 border border-white/20 flex items-center justify-center text-xl font-bold tracking-tight shadow-inner shrink-0">
-                                    ВВ
-                                </div>
-                                <div class="min-w-0">
-                                    <div class="flex items-center gap-2">
-                                        <h3 id="card-name" data-editable="true" class="text-xl sm:text-2xl font-bold tracking-tight text-white truncate">
-                                            Владислав Выголка
-                                        </h3>
-                                        <span class="w-2.5 h-2.5 rounded-full bg-apple-green shrink-0" title="Открыт к предложениям"></span>
-                                    </div>
-                                    <p id="card-role" data-editable="true" class="text-xs sm:text-sm text-neutral-300 font-medium truncate">
-                                        QA Инженер • Сравни.ру (Mobile iOS / Android &amp; API)
-                                    </p>
-                                    <p class="text-[11px] text-neutral-400 mt-0.5 truncate">
-                                        Выголка Владислав Владимирович • 28 лет (20.01.1998)
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="p-2 rounded-xl bg-white text-black shadow-md hidden sm:block shrink-0" title="Цифровая vCard">
-                                <svg class="w-12 h-12" viewBox="0 0 36 36" fill="currentColor">
-                                    <path d="M4 4h10v10H4V4zm2 2v6h6V6H6zm16-2h10v10H22V4zm2 2v6h6V6h-6zM4 22h10v10H4V22zm2 2v6h6v-6H6zm10-18h2v4h-2V6zm4 4h2v4h-2v-4zm-4 6h4v2h-4v-2zm6 2h2v4h-2v-4zm4-2h4v2h-4v-2zm-8 6h2v6h-2v-6zm4 2h4v4h-4v-4zm6 0h2v6h-2v-6z"></path>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-1 gap-3.5 mb-7">
-                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-2xl bg-apple-blue/15 border border-apple-blue/40 transition-all">
-                                <div class="min-w-0">
-                                    <div class="flex flex-wrap items-center gap-2">
-                                        <span class="text-[11px] text-neutral-300 uppercase tracking-wider">Электронная почта</span>
-                                        <span class="px-2.5 py-0.5 rounded-pill text-[10px] font-semibold bg-apple-green/20 text-apple-green">
-                                            ★ Предпочитаемый способ связи
-                                        </span>
-                                    </div>
-                                    <div id="card-email" data-editable="true" class="text-base sm:text-lg font-semibold text-white mt-1 truncate">v.vygolka@yandex.ru</div>
-                                </div>
-                                <div class="flex items-center gap-2 shrink-0">
-                                    <button type="button" onclick="copyField('card-email', 'Email скопирован')" class="px-3.5 py-2 rounded-pill bg-white/10 hover:bg-white/20 text-xs font-medium text-white transition-all cursor-pointer">
-                                        Копировать
-                                    </button>
-                                    <button type="button" onclick="openQuickMailModal('Предложение о сотрудничестве — QA Инженер')" class="px-4 py-2 rounded-pill bg-apple-blue hover:bg-apple-blueHover text-xs font-semibold text-white transition-all inline-flex items-center gap-1.5 cursor-pointer">
-                                        <svg class="w-3.5 h-3.5 pointer-events-none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                        </svg>
-                                        <span class="pointer-events-none">Написать на почту</span>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-2xl bg-white/5 border border-white/10 transition-all">
-                                <div class="min-w-0">
-                                    <div class="text-[11px] text-neutral-400 uppercase tracking-wider">Мобильный телефон</div>
-                                    <div id="card-phone" data-editable="true" class="text-base sm:text-lg font-semibold text-white mt-1 truncate">+7 (930) 731-30-40</div>
-                                </div>
-                                <div class="flex items-center gap-2 shrink-0">
-                                    <button type="button" onclick="copyField('card-phone', 'Телефон скопирован')" class="px-3.5 py-2 rounded-pill bg-white/10 hover:bg-white/20 text-xs font-medium text-white transition-all cursor-pointer">
-                                        Копировать
-                                    </button>
-                                    <a href="tel:+79307313040" onclick="triggerPhoneCall()" class="px-4 py-2 rounded-pill bg-apple-green/20 hover:bg-apple-green/30 text-apple-green border border-apple-green/30 text-xs font-semibold transition-all inline-flex items-center gap-1.5 cursor-pointer" target="_blank" rel="noopener noreferrer">
-                                        <svg class="w-3.5 h-3.5 pointer-events-none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                                        </svg>
-                                        <span class="pointer-events-none">Позвонить</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex flex-wrap items-center justify-between gap-3 pt-5 border-t border-white/10">
-                            <div class="text-xs text-neutral-400">
-                                Локация и формат: <span id="card-location" data-editable="true" class="text-white font-medium">Москва • Удалённо (Полная занятость)</span>
-                            </div>
-                            <div class="flex flex-wrap items-center gap-2">
-                                <button type="button" onclick="copyAllContacts()" class="px-3.5 py-2 rounded-pill bg-white/10 hover:bg-white/20 text-white text-xs font-medium transition-all cursor-pointer">
-                                    Скопировать всё
-                                </button>
-                                <button type="button" onclick="downloadVCard()" class="px-4 py-2 rounded-pill bg-apple-blue hover:bg-apple-blueHover text-white text-xs font-semibold inline-flex items-center gap-1.5 transition-all shadow-md cursor-pointer">
-                                    <svg class="w-3.5 h-3.5 pointer-events-none" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"></path>
-                                    </svg>
-                                    <span class="pointer-events-none">Сохранить .vcf</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<script>
+(function(){
+const translations={"Профиль":"Profile","Навыки":"Skills","Опыт работы":"Experience","Проект":"Project","Образование":"Education","Контакты":"Contact","Открыт к предложениям • Москва • Удалённо / гибрид":"Open to opportunities • Moscow • Remote / Hybrid","Владислав Выголка":"Vladislav Vygolka","QA Engineer с опытом более 4 лет в финтехе и банковском ПО. Тестирую мобильные приложения iOS и Android, REST API и интеграции. Нахожу причины дефектов на стыке клиента и backend, проверяю продуктовую аналитику и развиваю автоматизацию на Python.":"QA Engineer with 4+ years of experience in fintech and banking software. I test iOS and Android applications, REST APIs, and integrations. I investigate issues across client and backend systems, validate product analytics, and develop test automation skills with Python.","Предложить работу: v.vygolka@yandex.ru ↗":"Contact me about a role: v.vygolka@yandex.ru ↗","4+ года":"4+ years","QA в финтехе и банковском ПО":"QA in fintech & banking software","Функциональное и регрессионное Mobile QA":"Functional & regression mobile QA","Практика в собственном проекте":"Hands-on work in a personal project","Технологический профиль":"Technical profile","Компетенции и инструменты":"Skills & tools","Практический стек для тестирования мобильных продуктов, API, интеграций и данных — от воспроизведения дефекта до локализации его источника.":"A practical toolkit for testing mobile products, APIs, integrations, and data — from reproducing a defect to identifying its source.","iOS и Android":"iOS & Android","Функциональное, регрессионное, интеграционное и исследовательское тестирование мобильных приложений. Проверка пользовательских сценариев, UI, поведения сборок и взаимодействия с backend.":"Functional, regression, integration, and exploratory testing of mobile applications. Validation of user flows, UI, builds, and client–backend interactions.","REST API и интеграции":"REST APIs & integrations","Проверка запросов и ответов, параметров, заголовков, статусов и обработки ошибок. Анализ HTTP/HTTPS-трафика, логов и состояния данных для локализации дефектов.":"Validation of requests and responses, parameters, headers, status codes, and error handling. Analysis of HTTP/HTTPS traffic, logs, and data state to isolate defects.","Тест-дизайн и качество продукта":"Test design & product quality","Анализ требований, подготовка тест-кейсов и чек-листов, сопровождение дефектов, регрессионное покрытие и проверка продуктовой аналитики. Взаимодействие с разработчиками и аналитиками.":"Requirements analysis, test case and checklist design, defect tracking, regression coverage, and product analytics validation. Collaboration with developers and analysts.","Развитие в сторону Automation QA / SDET":"Growing towards Automation QA / SDET","Python и pytest применяю в собственном проекте для тестирования бизнес-логики и API. JavaScript / TypeScript и Maestro изучаю как следующие инструменты автоматизации.":"I use Python and pytest in a personal project to test business logic and APIs. I am learning JavaScript / TypeScript and Maestro as next steps in test automation.","JavaScript — изучаю":"JavaScript — learning","TypeScript — изучаю":"TypeScript — learning","Maestro — изучаю":"Maestro — learning","Мой подход к тестированию":"My approach to testing","Не ограничиваюсь проверкой интерфейса. Прохожу пользовательский сценарий целиком: анализирую требования, проверяю мобильный клиент, сетевой запрос, ответ backend, сохранённые данные и события аналитики. В баг-репорте фиксирую воспроизводимые шаги и технические доказательства, чтобы команде было проще найти первопричину.":"I go beyond UI checks and validate the full user journey: requirements, mobile client, network request, backend response, persisted data, and analytics events. My bug reports include reproducible steps and technical evidence to help the team identify root causes.","Карьерный трек • 4+ года":"Career history • 4+ years","От банковского desktop-ПО и интеграций до мобильного финтех-продукта и backend API.":"From banking desktop software and integrations to a mobile fintech product and backend APIs.","Финансовый маркетплейс и цифровые финансовые сервисы":"Financial marketplace and digital financial services","Апрель 2024 — настоящее время":"April 2024 — Present","Тестирую мобильное приложение на iOS и Android: новые функции, пользовательские сценарии, регрессии, интеграции и поведение интерфейса на разных устройствах.":"Test the iOS and Android app: new features, user journeys, regressions, integrations, and UI behaviour across devices.","Проверяю REST API через Postman и анализирую сетевой трафик в Proxyman: параметры запросов, заголовки, ответы, статусы и обработку ошибок.":"Test REST APIs with Postman and inspect network traffic in Proxyman, including request parameters, headers, responses, status codes, and error handling.","Диагностика дефектов":"Defect investigation","Локализую проблемы между frontend и backend, анализирую логи и состояние данных в MongoDB через Studio 3T, помогаю определить источник ошибки.":"Isolate issues between frontend and backend, inspect logs and MongoDB data with Studio 3T, and help identify root causes.","Аналитика и тестовая документация":"Analytics & test documentation","Проверяю события и параметры AppMetrica / Firebase, анализирую требования, готовлю чек-листы и тест-кейсы, веду дефекты и результаты проверок в Jira и Allure TestOps.":"Validate AppMetrica / Firebase events and parameters, analyse requirements, prepare checklists and test cases, and track defects and test results in Jira and Allure TestOps.","Июль 2022 — март 2024":"July 2022 — March 2024","1 год 9 месяцев":"1 year 9 months","Разработка банковских систем и системная интеграция":"Banking systems development and systems integration","Банковское ПО и интеграции":"Banking software & integrations","Тестировал банковское desktop-ПО и интеграции с внешними системами, включая взаимодействие с ФНС; устанавливал сборки и проверял бизнес-сценарии.":"Tested banking desktop software and integrations with external systems, including tax authority integrations; installed builds and validated business workflows.","Тест-дизайн и автотесты":"Test design & automated tests","Разрабатывал тест-кейсы, чек-листы и тест-планы, оформлял баг-репорты. Выполнял прогоны существующих автотестов в TestComplete / DelphiScript и анализировал результаты.":"Created test cases, checklists, and test plans, and documented defects. Executed existing automated tests with TestComplete / DelphiScript and analysed the results.","Командная работа":"Team collaboration","Помогал адаптировать стажёров: объяснял предметную область банковских систем, процессы тестирования и правила оформления дефектов.":"Helped onboard interns by explaining banking domain concepts, testing processes, and defect reporting practices.","Практика разработки и автоматизации":"Software development & test automation practice","Собственный проект: Up-call":"Personal project: Up-call","Применяю инженерный подход QA в разработке собственного Python-продукта.":"Applying a QA engineering mindset while building a Python-based product.","Up-call — платформа для контроля качества клиентских коммуникаций":"Up-call — a platform for customer communication quality assurance","Разрабатываю SaaS-продукт, который помогает компаниям оценивать качество разговоров сотрудников с клиентами. Сервис анализирует диалоги, проверяет их по заданным критериям, формирует результаты оценки и помогает находить точки роста в работе команды и клиентском сервисе. Проект находится в активной разработке.":"I am developing a SaaS product that helps companies assess the quality of employee–customer conversations. It analyses dialogues against defined criteria, generates evaluation results, and helps identify opportunities to improve team performance and customer service. The product is currently in active development.","Разработка":"Development","Разработка backend на Python и проектирование REST API":"Building a Python backend and designing REST APIs","Интеграция AI-сервисов для анализа диалогов и работы с транскрипциями":"Integrating AI services to analyse conversations and process transcripts","Реализация механизма оценки разговоров по настраиваемым критериям":"Implementing a configurable, criteria-based conversation scoring engine","Разработка многопользовательской модели с разделением данных организаций":"Designing a multi-tenant model with organisation-level data isolation","Обработка ошибок внешних сервисов и диагностика этапов выполнения":"Handling external service failures and diagnosing processing stages","QA и автоматизация":"QA & test automation","Проектирование тестовых сценариев для API и ключевой бизнес-логики":"Designing test scenarios for APIs and core business logic","Разработка автоматизированных тестов на Python и pytest":"Developing automated tests with Python and pytest","Проверка корректности расчёта оценок и обработки различных результатов проверки":"Validating scoring calculations and handling different evaluation outcomes","Тестирование валидации данных, негативных и граничных сценариев":"Testing data validation, negative cases, and boundary conditions","Проверка изоляции данных организаций и устойчивости интеграций с AI-сервисами":"Testing tenant data isolation and the resilience of AI service integrations","Регрессионные проверки и анализ причин ошибок в процессе обработки":"Running regression checks and analysing processing failures","Академическая база":"Education","Сетевые технологии и предметная подготовка в банковской сфере.":"Networking technologies and domain knowledge in banking.","Высшее образование • 2022":"Higher education • 2022","Брянский государственный университет имени академика И.Г. Петровского":"Bryansk State University named after Academician I.G. Petrovsky","Физико-математический факультет • Сетевые технологии":"Faculty of Physics and Mathematics • Networking Technologies","База по сетевым технологиям, протоколам и передаче данных, полезная при анализе клиент-серверного взаимодействия и сетевого трафика.":"A foundation in networking technologies, protocols, and data transmission, useful for analysing client–server interactions and network traffic.","Повышение квалификации • 2023":"Professional training • 2023","Основы банковского дела и бухгалтерского учёта в коммерческом банке":"Fundamentals of banking and accounting in a commercial bank","Предметная подготовка по финансовой и банковской логике, бухгалтерскому учёту, отчётности и бизнес-процессам коммерческих банков.":"Domain training in financial and banking processes, accounting, reporting, and commercial banking workflows.","Обсудим вашу вакансию?":"Let's discuss your opportunity","Открыт к предложениям QA Engineer, задачам по тестированию и профессиональному сотрудничеству.":"Open to QA Engineer opportunities, testing challenges, and professional collaboration.","Предпочтительный способ связи":"Preferred contact method","Москва • Удалённо / гибрид • Полная занятость":"Moscow • Remote / Hybrid • Full-time","Что указать в предложении":"What to include in your message","Название компании и позиции, основные задачи, технологический стек и формат работы. Так я смогу быстрее оценить соответствие роли своему опыту и ответить предметно.":"Please include the company and role, key responsibilities, technology stack, and work format. This will help me assess the fit and provide a relevant response.","Написать по вакансии ↗":"Email me about the role ↗","Наверх ↑":"Back to top ↑","Владислав Выголка • QA Engineer":"Vladislav Vygolka • QA Engineer"},key='vlad-qa-language';let lang='ru';
+function setLanguage(next){
+lang=next;const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;
+while(n=walker.nextNode()){const p=n.parentElement;if(!p||['SCRIPT','STYLE','NOSCRIPT'].includes(p.tagName))continue;const original=n.__ruText||n.nodeValue;if(!n.__ruText)n.__ruText=original;const k=original.trim();if(next==='en'&&translations[k]){const a=original.match(/^\\s*/)?.[0]||'',b=original.match(/\\s*$/)?.[0]||'';n.nodeValue=a+translations[k]+b;}else if(next==='ru')n.nodeValue=original;}
+document.documentElement.lang=next;const btn=document.getElementById('language-toggle');if(btn){btn.textContent=next==='ru'?'EN':'RU';btn.setAttribute('aria-label',next==='ru'?'Switch to English':'Переключить на русский');}
+document.title=next==='en'?'Vladislav Vygolka — QA Engineer | Mobile QA, REST APIs, FinTech':'Владислав Выголка — QA Engineer | Mobile QA, REST API, FinTech';
+const d=document.querySelector('meta[name="description"]');if(d)d.content=next==='en'?'Vladislav Vygolka — QA Engineer with 4+ years of experience in fintech and banking software. Mobile QA, REST APIs, Postman, Proxyman, MongoDB, Python and pytest.':'Владислав Выголка — QA Engineer с опытом более 4 лет в финтехе и банковском ПО. Mobile QA, REST API, Postman, Proxyman, MongoDB, Python и pytest.';
+const og=document.querySelector('meta[property="og:locale"]');if(og)og.content=next==='en'?'en_US':'ru_RU';try{localStorage.setItem(key,next)}catch(e){}
+}
+const btn=document.getElementById('language-toggle');if(btn)btn.addEventListener('click',()=>setLanguage(lang==='ru'?'en':'ru'));let initial='ru';try{initial=localStorage.getItem(key)||'ru'}catch(e){}setLanguage(initial);
+})();
+</script>
+  <script>
+    const themeKey = 'vlad-qa-theme';
+    function setTheme(mode) {
+      const dark = mode !== 'light';
+      document.documentElement.classList.toggle('dark', dark);
+      document.getElementById('theme-icon').textContent = dark ? '☼' : '☾';
+      try { localStorage.setItem(themeKey, dark ? 'dark' : 'light'); } catch (_) {}
+    }
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      setTheme(document.documentElement.classList.contains('dark') ? 'light' : 'dark');
+    });
+    try { setTheme(localStorage.getItem(themeKey) || 'dark'); } catch (_) { setTheme('dark'); }
+  </script>
+</body>
+</html>
