@@ -230,6 +230,48 @@
     .content-list { padding-left:1.15rem; list-style:disc; }
     .content-list li { padding-left:.15rem; margin:.45rem 0; }
     a:focus-visible, button:focus-visible { outline:2px solid #0071e3; outline-offset:3px; }
+
+    .back-to-top {
+      position: fixed;
+      right: max(24px, env(safe-area-inset-right));
+      bottom: max(24px, env(safe-area-inset-bottom));
+      z-index: 60;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border: 1px solid var(--card-border-hover);
+      border-radius: 9999px;
+      color: #fff;
+      background: rgba(0, 113, 227, 0.88);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.24), 0 4px 14px rgba(0, 113, 227, 0.28);
+      backdrop-filter: saturate(180%) blur(16px);
+      -webkit-backdrop-filter: saturate(180%) blur(16px);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(12px) scale(.94);
+      transition: opacity .25s ease, transform .25s ease, visibility .25s ease, background-color .25s ease;
+      cursor: pointer;
+    }
+    .back-to-top.is-visible {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateY(0) scale(1);
+    }
+    .back-to-top:hover {
+      background: #0077ed;
+      transform: translateY(-3px) scale(1.04);
+      box-shadow: 0 10px 30px rgba(0, 113, 227, 0.4);
+    }
+    .back-to-top:active { transform: scale(.96); }
+    .back-to-top svg { width: 21px; height: 21px; }
+    @media (max-width: 640px) {
+      .back-to-top { width: 46px; height: 46px; right: 18px; bottom: max(18px, env(safe-area-inset-bottom)); }
+    }
+
     @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior:auto !important; animation-duration:.01ms !important; transition-duration:.01ms !important; } }
   </style>
   <script type="application/ld+json">
@@ -450,6 +492,33 @@ const btn=document.getElementById('language-toggle');if(btn)btn.addEventListener
       setTheme(document.documentElement.classList.contains('dark') ? 'light' : 'dark');
     });
     try { setTheme(localStorage.getItem(themeKey) || 'dark'); } catch (_) { setTheme('dark'); }
+  </script>
+
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Вернуться наверх" title="Наверх">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5"></path><path d="m5 12 7-7 7 7"></path>
+    </svg>
+  </button>
+
+  <script>
+    (() => {
+      const backToTop = document.getElementById('back-to-top');
+      if (!backToTop) return;
+
+      const updateVisibility = () => {
+        backToTop.classList.toggle('is-visible', window.scrollY > 320);
+      };
+
+      window.addEventListener('scroll', updateVisibility, { passive: true });
+      updateVisibility();
+
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+        });
+      });
+    })();
   </script>
 </body>
 </html>
