@@ -233,8 +233,8 @@
 
     .back-to-top {
       position: fixed;
-      right: max(24px, env(safe-area-inset-right));
-      bottom: max(24px, env(safe-area-inset-bottom));
+      right: max(36px, env(safe-area-inset-right));
+      bottom: max(36px, env(safe-area-inset-bottom));
       z-index: 60;
       display: inline-flex;
       align-items: center;
@@ -269,7 +269,7 @@
     .back-to-top:active { transform: scale(.96); }
     .back-to-top svg { width: 21px; height: 21px; }
     @media (max-width: 640px) {
-      .back-to-top { width: 46px; height: 46px; right: 18px; bottom: max(18px, env(safe-area-inset-bottom)); }
+      .back-to-top { width: 46px; height: 46px; right: 28px; bottom: max(28px, env(safe-area-inset-bottom)); }
     }
 
     @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior:auto !important; animation-duration:.01ms !important; transition-duration:.01ms !important; } }
